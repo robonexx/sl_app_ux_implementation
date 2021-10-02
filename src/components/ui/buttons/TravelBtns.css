@@ -1,0 +1,42 @@
+.travel-btns-wrapper {
+width: 375px;
+height: 162px;
+position: relative;
+z-index: 100;
+background: linear-gradient(to bottom, transparent 10%, var(--color-neutral-700) 80%);
+}
+
+.travel-btn-container {
+    width: 100%;
+    display: flex;
+}
+
+.travel-btn {
+width: 188px;
+height: 42px;
+border: none;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+color: var(--color-primary-100);
+} 
+
+.travel-btn.search {
+    background-color: var(--color-neutral-700);
+}
+
+
+.travel-btn.departures {
+    background-color: var(--color-neutral-800);
+}
+
+.bottom-container {
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-neutral-700);
+    overflow: hidden;
+}
+
+.search-add {
+    padding-top: 20px;
+}
+

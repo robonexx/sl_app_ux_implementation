@@ -1,0 +1,18 @@
+.add-favorite {
+    width: fit-content;
+    height: 32px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    color: var(--color-neutral-100);
+    background-color: var(--color-neutral-600);
+    font-family: 'slRegular';
+    font-size: 1.2em;
+}
+
+.add {
+    font-size: 20px;   
+}

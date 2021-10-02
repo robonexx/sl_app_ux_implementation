@@ -1,10 +1,200 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;400;700&display=swap');
+
+:root {
+  /* Breakpoints */
+  --b_xs: screen and (max-width: 575px);
+  --b_sm: screen and (min-width: 576px);
+  --b_md: screen and (min-width: 768px);
+  --b_lg: screen and (min-width: 1024px);
+  --b_xl: screen and (min-width: 1176px);
+  --b_sm_max: screen and (max-width: 767px);
+  --b_md_max: screen and (max-width: 1023px);
+  --b_lg_max: screen and (max-width: 1175px);
+
+  /* Container */
+  --container-width: 1200px;
+
+  /* === COLOR === */
+  --c_color_alpha: #0c71bf;
+  --c_color_alpha_dark: #0a4a7c;
+  --c_color_beta: #e50051;
+  --c_color_gamma: #3aaa35;
+  --c_light_alpha: #252525;
+  --c_light_beta: #dcdcdc;
+  --c_light_gamma: #f4f4f4;
+  --c_light_epsilon: #faf5e1;
+  --c_text: #000000;
+  --c_background: #ffffff;
+  --c_code: #252525;
+  --c_valid: #95c11f;
+  --c_warning: #e1741b;
+  --c_invalid: #d71d24;
+  --c_disruption: #ff5c1c;
+  --c-no__disruption: #179d4d;
+  --c_external_travel: #58358a;
+
+  /** New design system colors **/
+  --color-black: #000000; /** depricated **/
+  --color-dark-blue: dodgerblue; /** depricated **/
+  --color-light-blue: lightblue; /** depricated **/
+  --color-dark-grey: #999999; /** depricated **/
+  --color-grey: #ccc; /** depricated **/
+
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #f1f2f3;
+  --color-neutral-300: #d8dadc;
+  --color-neutral-400: #c0c2c6;
+  --color-neutral-500: #73777d;
+  --color-neutral-600: #4c5157;
+  --color-neutral-700: #20252c;
+  --color-neutral-800: #000000;
+
+  --color-primary-100: #f3f8fc;
+  --color-primary-200: #afdff9;
+  --color-primary-300: #7ab4ff;
+  --color-primary-400: #2870f0;
+  --color-primary-500: #0a47c2;
+
+  --color-highlight-light: #f5cf39;
+  --color-success-light: #197e50;
+  --color-warning-light: #d07432;
+  --color-error-light: #ce3333;
+
+  --color-highlight-dark: #f7dd5f;
+  --color-success-dark: #1d9f64;
+  --color-warning-dark: #fb9e53;
+  --color-error-dark: #f05555;
+
+  --color-focus: var(--color-primary-500);
+
+  /* Transports */
+  --c_metro_blue: #0089ca;
+  --c_metro_red: #d71d24;
+  --c_metro_green: #179d4d;
+  --c_tram_saltsjobanan: #008f93;
+  --c_tram_roslagsbanan: #9f599a;
+  --c_tram_sparvagcity: #878a83;
+  --c_tram_nockebybanan: #778da7;
+  --c_tram_lidingobanan: #b76020;
+  --c_tram_tvarbanan: #d77d00;
+  --c_train_commuterrail: #ec619f;
+  --c_bus_blue: #0097da;
+  --c_bus_red: #d71d24;
+  --c_ship: #0097da;
+  --c_walk: #000;
+  --c_bike: #fbff00;
+  --c_narbuss: #000;
+  --c_ferry: #0097da;
+  --c_unknown: #000;
+  --c_regionaltrain: var(--c_external_travel);
+  --c_expresstrain: var(--c_external_travel);
+  --c_expressbus: var(--c_external_travel);
+
+  /* === SHADOWS === */
+  --s_box_shadow: 1px 1px 4px 0 rgba(111, 111, 111, 0.58);
+
+  --elevation-400-light: 0px 16px 32px rgba(39, 51, 51, 0.1);
+
+  /* === Z-INDEX === */
+  --z_floating: 1000;
+  --z_context_menu: 1500;
+  --z_popup: 2000;
+
+  /* === FONT STACK === */
+  --f_stack: 'SL Gothic', sans-serif;
+  --f_stack_icons: 'Icons', sans-serif;
+
+  --f_weight-bold-label: 700;
+
+  /* === TIMINGS === */
+  --t_animation: 200ms;
+
+  /* === DIMENSIONS === */
+  --d_fs: 16px;
+  --d_fs_delta: 2;
+  --d_lh: 24px;
+  --d_lh_delta: 4;
+
+  /* Spacings */
+  /* https://www.figma.com/file/rNvpernOG8A8EB8xAhv1o9/SL-Foundation-Library?node-id=885%3A0 */
+  --space-xxxs: 4px;
+  --space-xxs: 8px;
+  --space-xs: 16px;
+  --space-s: 24px;
+  --space-m: 32px;
+  --space-l: 40px;
+  --space-xl: 48px;
+  --space-xxl: 64px;
+
+  /* Form Spacings */
+  --form-space-xxxs: 4px;
+  --form-space-xxs: 8px;
+  --form-space-xs: 16px;
+  --form-space-s: 24px;
+
+  /* Input and button sizing. */
+  --size-medium: 46px;
+  --size-small: 32px;
+
+  /* Input height */
+  --input-height: 44px;
+
+  /* Radius */
+  --d_radius: 4px;
+  --d_radius_large: 15px;
+  --d_radius_metro: 4px;
+  --d_radius_lightrail: 10% / 50%;
+  --d_radius_tram: 10% / 50%;
+  --d_radius_train: 50% / 100%;
+
+  --radius-button-dsm: 8px;
+
+  /* Borders */
+  --border-width: 2px;
+  --border-radius: 8px;
+  --border-radius-focus: 12px;
+
+  /* Grid */
+  --d_columns: 12;
+  --d_columns_gap: 1rem;
+  --d_columns_gap-none: 0;
+
+  /* Devices */
+  --d_xs: 543px;
+  --d_sm: 544px;
+  --d_md: 768px;
+  --d_lg: 992px;
+  --d_xl: 1280px;
+  --d_sm_max: 767px /* One less than counter part */;
+  --d_md_max: 991px /* One less than counter part */;
+  --d_lg_max: 1279px /* One less than counter part */;
+}
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100%;
+  background: var(--color-neutral-800);
+  font-family: 'Gothic A1', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'slRegular';
+  src: url('./components/ui/fonts/slRegular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'slBold';
+  src: url('./components/ui/fonts/slBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'slCool';
+  src: url('./components/ui/fonts/slCool.woff2') format('woff2');
 }
 
 code {

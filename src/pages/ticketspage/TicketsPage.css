@@ -1,0 +1,138 @@
+
+  h1 {
+    font-size: 2.4em;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-family: 'slBold';
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1.6em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  p {
+    font-family: 'slRegular';
+    color: #c1c2c7;
+  }
+  .tickets-wrapper {
+    font-size: 90%;
+    width: 375px;
+    min-height: 100%;
+    background-color: var(--color-neutral-700);
+    color: #fff;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  section {
+    position: relative;
+  }
+  .slCool {
+    font-family: 'slCool';
+    font-size: 30px;
+  }
+  .slBold {
+    font-size: 30px;
+    font-family: 'slBold';
+  }
+  .slRegular {
+    font-size: 30px;
+    font-family: 'slRegular';
+  }
+
+  .dina-biljetter {
+      margin: 20px 0;
+  }
+
+  .blue-line {
+   margin: 10px 0 10px 5px;
+    border-bottom: 5px solid #2a70ef;
+    width: 113px;
+    height: 0.5em;
+  }
+  .ticket-holder {
+    display: flex;
+    margin: 20px auto 0;
+    padding: 20px 0;
+    align-content: center;
+    justify-content: center;
+    background-color: #12151a;
+    height: fit-content;
+    width: 348px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .biljett-typ-header {
+    font-family: slBold;
+   margin: 2px 5px 0 5px;
+    line-height: 42px;
+    width: 100%;
+    border-bottom: 1px solid #c1c2c7;
+  }
+  .biljett-typ {
+    font-family: slBold;
+    margin: 2px 5px 0 0px;
+    width: 100%;
+    border-bottom: 1px solid #c1c2c7;
+    color: #f2f2f4;
+  }
+  .biljett-typ p,
+  h3 {
+    padding: 5px 0 5px 5px;
+  }
+  .biljett-typ p {
+    font-family: slRegular;
+    margin-top: 5px;
+  }
+  
+  .hantera-biljett-subheader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .space-between img,
+  .space-between h3 {
+    padding-right: 14px;
+  }
+  
+  #hantera-biljetter,
+  #kop-biljetter {
+    width: 100%;
+  }
+  #hantera-biljetter h3 {
+    margin: 10px 0 10px 5px;
+  }
+  #hantera-biljetter .blue-line {
+    margin-top: 0px;
+    width: 168px;
+  }
+  #kop-biljetter .blue-line {
+    margin: 0px 5px;
+    width: 148px;
+  }
+  
+  .logga-in {
+    color: #c1c2c7;
+    font-size: 1.2em;
+    font-family: slRegular;
+    margin-right: 15px;
+  }
+  

@@ -1,0 +1,43 @@
+.ticket-card {
+    position: relative;
+    width: 356px;
+    height: 225px;
+    background-color: var(--color-success-light);
+    border-radius: 15px;
+    padding: 20px 10px;
+}
+
+.ticket-info {
+    height: 60%;
+}
+
+.ticket-info h3, 
+.ticket-info p {
+    padding-left: 0px;
+    
+}
+
+
+.ticket-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.show-ticket {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 50%;
+}
+
+.ticket-bottom > span:hover,
+.show-ticket:hover{
+    color: var(--color-neutral-400);
+  transform: scale(0.99);
+  cursor: pointer;
+    }
