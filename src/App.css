@@ -43,18 +43,14 @@
   transform: translate(-50%);
   top: 2%;
 }
-.icons {
-  stroke: var(--color-primary-100);
-  stroke-width: 2px;
-  
-}
-
 .hantera-biljett-subheader .icons:hover {
   stroke: var(--color-neutral-400);
   transform: scale(0.98);
 }
 
 .links {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   list-style: none;
   color: var(--color-primary-100);
@@ -64,5 +60,4 @@
 .links:hover > .icons {
   stroke: var(--color-neutral-400);
   color: var(--color-neutral-400);
-  transform: scale(0.98);
 }

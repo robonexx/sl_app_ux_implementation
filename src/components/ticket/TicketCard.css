@@ -35,9 +35,18 @@ justify-content: space-evenly;
 width: 50%;
 }
 
-.ticket-bottom > span:hover,
+.ticket-bottom span {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.book-bike:hover,
 .show-ticket:hover{
     color: var(--color-neutral-400);
-  transform: scale(0.99);
+    stroke: var(--color-neutral-400);
   cursor: pointer;
-    }
+}
+
+.bicycle-text {
+    margin: 5px 0 0 0;
+}

@@ -16,11 +16,17 @@ const TicketCard = () => {
             <p>1 rabatterad</p>
             </div>
             <div className="ticket-bottom">
-                <span>Reservera cykel</span>
+                <div className="book-bike">
+                <Link
+                    className="links"
+                    to="/bookvehicle">
+                    <span className="bicycle-text">Reservera cykel</span><Bike className="icons" />
+                    </Link>
+                    </div>
                 <div className="show-ticket">
-                    <Link
-                        className="links"
-                        to="/showticket"
+                <Link
+                    className="links"
+                    to="/showticket"
                     >
                         <h3>Visa biljett </h3>
                     </Link>
