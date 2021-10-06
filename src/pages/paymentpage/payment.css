@@ -1,0 +1,8 @@
+.pay-wrapper {
+    margin: 0 auto;
+    width: 375px;
+    height: calc(812px - 8vh);
+    max-height: 100%;
+    color: #fff;
+    background: rgb(71, 21, 21);
+  }

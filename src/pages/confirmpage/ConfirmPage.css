@@ -91,6 +91,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      text-decoration: none;
   }
 
   .pay-btn {
@@ -100,11 +101,13 @@
     height: 32px;
     
     border: none;
-      border-radius: 5px;
-      background-color: var(--color-primary-400);
-      color: var(--color-neutral-100);  
-      cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--color-primary-400);
+    color: var(--color-neutral-100);  
+    cursor: pointer;
 }
+
+
 
 .pay-btn:hover {
     background-color: var(--color-dark-blue);

@@ -7,6 +7,7 @@ import ConfirmPage from './pages/confirmpage/ConfirmPage';
 import ShowTicket from './pages/showTicket/ShowTicket';
 import TravelMap from './pages/travelMap/TravelMap';
 import BookVehicle from './pages/bookvehiclepage/bookVehiclePage';
+import PaymentPage from './pages/paymentpage/PaymentPage';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/confirmpage" component={ConfirmPage} />
             <Route exact path="/showticket" component={ShowTicket} />
             <Route exact path="/bookvehicle" component={BookVehicle} />
+            <Route exact path="/payment" component={PaymentPage} />
             
           </Switch>
           {/* <TicketsPage /> */}

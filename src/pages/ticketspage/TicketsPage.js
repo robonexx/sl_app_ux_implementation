@@ -6,6 +6,7 @@ import TicketCard from '../../components/ticket/TicketCard'
 
 const TicketsPage = () => {
 
+   const activeTicket = true
 
     return (
         <div className="tickets-wrapper">
@@ -13,8 +14,9 @@ const TicketsPage = () => {
                <div className='blue-line '></div>
                <h2>Dina biljetter</h2>
                <div className='ticket-holder'>
-                         {/* <p>Du har inga biljetter på den här telefonen.</p> */}
+                  {   !activeTicket ?   <p>Du har inga biljetter på den här telefonen.</p> :
                         <TicketCard />
+                    } 
                </div>
           </section>
 

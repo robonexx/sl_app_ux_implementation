@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 import './ConfirmPage.css'
 
 const ConfirmTickets = () => {
@@ -85,11 +86,12 @@ const ConfirmTickets = () => {
             </section>
             <section className="confirm-section">
                 <h3>Att betala</h3>
-                <h3>{redSum} kr</h3>
+                <h3>{sum} kr</h3>
             </section>
-            <div className="pay-btn-div">
+            
+             <Link to="/payment" className="pay-btn-div">
                 <button className="pay-btn">Fortsätt till betalning</button>
-            </div>
+            </Link>
         </div>
      );
 }

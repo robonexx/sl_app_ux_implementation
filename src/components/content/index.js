@@ -53,3 +53,24 @@ export const HandleTickets = [
         path: '/tickets/recreteAppTickets',
     },
 ]
+
+export const vehiclePositions = [
+    {
+        station: "Gamla Stan",
+        lng: 18.06714771846466,
+        lat: 59.323032833968846,
+    },
+    {
+        station: "Medborgarplatsen",
+        lng: 18.073735223789242,
+        lat: 59.31441594562894,
+    },
+    {
+        station: "Skanstull",
+        lng: 18.075807988683835,
+        lat: 59.30808856970841,
+         
+    },
+
+]
+, 
