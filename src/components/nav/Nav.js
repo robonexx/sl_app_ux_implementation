@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Journey from './ui/icons/Journey'
-import Tickets from './ui/icons/Tickets'
-import More from './ui/icons/More'
+import Journey from '../ui/icons/Journey'
+import Tickets from '../ui/icons/Tickets'
+import More from '../ui/icons/More'
 
 const Nav = () => {
     return (

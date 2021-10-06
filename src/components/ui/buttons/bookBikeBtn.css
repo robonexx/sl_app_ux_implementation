@@ -1,0 +1,47 @@
+.bike-btns-wrapper {
+    width: 375px;
+    height: 162px;
+    position: relative;
+    z-index: 100;
+    background: linear-gradient(to bottom, transparent 10%, var(--color-neutral-700) 80%);
+    }
+    
+    .bike-btn-container {
+        width: 100%;
+        display: flex;
+    }
+    
+    .bike-btn {
+    width: 188px;
+    height: 42px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: var(--color-primary-100);
+    } 
+    
+    .bike-btn.book-bike{
+        background-color: var(--color-neutral-700);
+    }
+    
+    .bike-btn.book-scooter {
+        background-color: var(--color-neutral-800);
+    }
+    
+    .bottom-container {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        background-color: var(--color-neutral-700);
+        overflow: hidden;
+    }
+
+    .booking-info {
+        height: 100%;
+        padding: 10px 20px;
+    }
+
+    .booking-info p,
+    .booking-info span {
+        margin-left: 10px;
+    }

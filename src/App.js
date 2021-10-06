@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Nav from './components/Nav'
+import Nav from './components/nav/Nav'
 import TicketsPage from './pages/ticketspage/TicketsPage'
 import ConfirmPage from './pages/confirmpage/ConfirmPage';
 import ShowTicket from './pages/showTicket/ShowTicket';

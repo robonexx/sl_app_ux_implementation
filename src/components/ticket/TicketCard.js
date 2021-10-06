@@ -20,7 +20,7 @@ const TicketCard = () => {
                 <Link
                     className="links"
                     to="/bookvehicle">
-                    <span className="bicycle-text">Reservera cykel</span><Bike className="icons" />
+                    <span className="bicycle-text">Reservera cykel</span><Bike />
                     </Link>
                     </div>
                 <div className="show-ticket">

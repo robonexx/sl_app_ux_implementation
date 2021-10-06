@@ -1,7 +1,7 @@
 const ElScooter = () => {
     return (
         <>
-            <svg className="icons" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="icons scooter" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20 0H4C1.79086 0 0 1.79086 0 4V20C0 22.2091 1.79086 24 4 24H20C22.2091 24 24 22.2091 24 20V4C24 1.79086 22.2091 0 20 0Z" fill="black"/>
 <path d="M19.25 17.5C19.25 18.466 18.4665 19.25 17.5 19.25C16.5335 19.25 15.75 18.466 15.75 17.5C15.75 16.534 16.5335 15.75 17.5 15.75C18.4665 15.75 19.25 16.534 19.25 17.5Z" stroke="white" />
 <path d="M8.25 17.5C8.25 18.466 7.4665 19.25 6.5 19.25C5.5335 19.25 4.75 18.466 4.75 17.5C4.75 16.534 5.5335 15.75 6.5 15.75C7.4665 15.75 8.25 16.534 8.25 17.5Z" stroke="white" />
