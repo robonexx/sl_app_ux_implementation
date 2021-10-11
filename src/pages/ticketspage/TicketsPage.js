@@ -6,7 +6,8 @@ import TicketCard from '../../components/ticket/TicketCard'
 
 const TicketsPage = () => {
 
-   const activeTicket = true
+     const activeTicket = true
+     
 
     return (
         <div className="tickets-wrapper">

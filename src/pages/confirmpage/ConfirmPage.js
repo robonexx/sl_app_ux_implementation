@@ -41,14 +41,6 @@ const ConfirmTickets = () => {
     }
     
 
-    
-
-
-
-    
-    
-    
-
     return (
         <div className="wrapper">
             <header className="confirm-header">

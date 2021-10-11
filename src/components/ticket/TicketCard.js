@@ -12,7 +12,7 @@ const TicketCard = () => {
         <div className="ticket-card">
             <div className="ticket-info">
                <h1><Timer seconds={4500}/></h1> 
-            <h3>Enkelbiljett</h3>
+            <h3>Enkelbiljett SL</h3>
             <p>1 rabatterad</p>
             </div>
             <div className="ticket-bottom">
