@@ -4,10 +4,9 @@ import './SlMap.css'
 import Bike from '../ui/icons/Bike'
 
 
-function CustomMarker(props) {
+function CustomMarker({latitude, longitude}) {
     const context = React.useContext(MapContext);
     
-    const {longitude, latitude} = props;
   
     const [x, y] = context.viewport.project([longitude, latitude]);
   
@@ -24,7 +23,6 @@ function CustomMarker(props) {
     return (
         <div style={markerStyle} >
             <Bike longitude={longitude} latitude={latitude} />
-        {/* ({longitude}, {latitude}) */}
       </div>
     );
 }

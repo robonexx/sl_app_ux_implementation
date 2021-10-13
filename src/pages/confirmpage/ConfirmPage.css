@@ -41,6 +41,11 @@
       margin-left: 40px;
         flex: 6;
   }
+
+  .confirm-header a {
+    text-decoration: none;
+    color: var(--color-neutral-100);
+  }
   .confirm-header span {
       margin-right: 5px;
       flex: 1;

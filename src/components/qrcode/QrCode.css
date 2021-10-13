@@ -10,11 +10,13 @@
     filter: drop-shadow(4px 4px rgba(0,0,0,0.3));
 }
 
-.ticket-time {
-    font-weight: 600;
+.ticket-id {
+    margin-top:40px;
+    font-size: 1rem;
 }
 
-.ticket-id {
+.ticket-time {
     margin-top: 20px;
-    font-size: 0.8em;
+    font-size:  2rem;
+    font-weight: 600;
 }

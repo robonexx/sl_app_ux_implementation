@@ -1,8 +1,8 @@
-import React, { useRef, useEffect, useState } from 'react';
-import ReactMapGl, {MapContext} from 'react-map-gl';
+import React, { useState } from 'react';
+import ReactMapGl from 'react-map-gl';
 import CustomeMarker from './CustomeMarker'
 
-const SlMap = (props) => {
+const SlMap = ({latitude, longitude}) => {
 
   const [viewport, setViewport] = useState({
     width: 375,
@@ -12,7 +12,7 @@ const SlMap = (props) => {
     zoom: 14
   })
 
-  const {longitude, latitude} = props;
+  /* const {longitude, latitude} = props; */
 
   return (
   <div className="map-container">

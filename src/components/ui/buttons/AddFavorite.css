@@ -1,7 +1,7 @@
 .add-favorite {
     width: fit-content;
-    height: 32px;
-    margin-left: 10px;
+    height: 46px;
+    margin: 3px 10px;
     border: none;
     border-radius: 5px;
     display: flex;

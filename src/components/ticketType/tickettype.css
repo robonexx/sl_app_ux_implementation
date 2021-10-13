@@ -1,0 +1,39 @@
+section {
+    padding: 20px 5px;
+ }
+
+.confirm-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: 0 5px;
+    width: 32px;
+    height: 32px;
+    border: none;
+      border-radius: 5px;
+      background-color: var(--color-primary-400);
+      color: var(--color-neutral-100);  
+      cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color-dark-blue);
+}
+
+.btn-minus,
+.btn-plus {
+    font-size: 20px;
+}
+
+.pay-btn-div {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

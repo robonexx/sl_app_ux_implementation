@@ -1,15 +1,18 @@
 .search-bar {
     position: relative;
-    width: 100%;
-    height: 46px;
+    margin: 0 3%;
+    width: 90%;
+    height:46px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    background: white;
+    border-radius: 5px;
 }
 
 .search-bar input {
     border: none;
-    width: 95%;
-    padding: 8px 10px;
+    width: 85%;
+    padding: 6px 8px;
     border-radius: 5px;
 }

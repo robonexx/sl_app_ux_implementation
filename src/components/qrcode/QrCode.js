@@ -15,7 +15,7 @@ const QrCode = ({ text }) => {
     return (
         <div className="qrcode">
             <img src={qrSrc} alt="" />
-            {/* {text} */} <br />
+            {text} <br />
             <span className="ticket-id">Biljett-ID: 345678 5644</span>
             <div className="ticket-time">
             {new Date().toLocaleString([], {timeStyle: 'short'}) + ''}
