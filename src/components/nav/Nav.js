@@ -1,4 +1,5 @@
 import React from 'react';
+import './nav.css'
 import { Link } from 'react-router-dom'
 import Journey from '../ui/icons/Journey'
 import Tickets from '../ui/icons/Tickets'

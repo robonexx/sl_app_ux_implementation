@@ -11,19 +11,23 @@ const TicketsPage = () => {
 
     return (
         <div className="tickets-wrapper">
-          <section id='dina-biljetter'>
-               <div className='blue-line '></div>
-               <h2>Dina biljetter</h2>
-               <div className='ticket-holder'>
-                  {   !activeTicket ?   <p>Du har inga biljetter på den här telefonen.</p> :
-                        <TicketCard />
-                    } 
-               </div>
+          <section className='your-tickets'>
+               <div className='blue-border '></div>
+                   <h2>Dina biljetter</h2>
+                   {
+                    !activeTicket ?
+                        <div className='ticket-holder'>
+                              <p>Du har inga biljetter på den här telefonen.</p> 
+                             </div>
+                             :
+                             <TicketCard />
+                   }
+               
           </section>
 
-          <section id='kop-biljetter'>
-               <div className='blue-line '></div>
-               <h2 className='biljett-typ-header'>Köp ny biljett</h2>
+          <section className='buy-tickets'>
+               <div className='blue-border '></div>
+               <h2 className='tickets-header'>Köp ny biljett</h2>
                <div className='biljett-typ'>
                   <Link className="links" to="/confirmpage">  <h3>Enkelbiljett</h3> </Link>
                     <p>Obegränsat antal resor inom 75 minuter</p>
@@ -39,7 +43,7 @@ const TicketsPage = () => {
           </section>
 
           <section id='hantera-biljetter'>
-               <div className='blue-line'></div>
+               <div className='blue-border'></div>
                <h2 className='biljett-typ-header'>Hantera Biljetter</h2>
                <div className='biljett-typ hantera-biljett-subheader'>
                     <h3>Köphistorik och kvitton</h3>

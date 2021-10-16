@@ -17,12 +17,13 @@ function CustomMarker({latitude, longitude}) {
         width: 22,
         height: 22,
         left: x,
-        top: y
+        top: y,
+        cursor: 'pointer',
     };
   
     return (
         <div style={markerStyle} >
-            <Bike longitude={longitude} latitude={latitude} />
+            <Bike className="bike" longitude={longitude} latitude={latitude} />
       </div>
     );
 }

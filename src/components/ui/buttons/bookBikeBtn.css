@@ -1,6 +1,6 @@
 .bike-btns-wrapper {
     width: 375px;
-    height: 162px;
+    height: 100%;
     position: relative;
     z-index: 100;
     background: linear-gradient(to bottom, transparent 10%, var(--color-neutral-700) 80%);
@@ -11,7 +11,7 @@
         display: flex;
     }
     
-    .bike-btn {
+    .vehicle-btn {
     width: 188px;
     height: 42px;
     border: none;
@@ -20,17 +20,36 @@
     color: var(--color-primary-100);
     } 
     
-    .bike-btn.book-bike{
+    .book-bike {
         background-color: var(--color-neutral-700);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    
+    
+    .book-scooter {
+        background-color: var(--color-neutral-800);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    /* .book-scooter:focus {
+        background-color: var(--color-neutral-700);
+
     }
     
-    .bike-btn.book-scooter {
+    .book-scooter:focus >.book-bike{
         background-color: var(--color-neutral-800);
-    }
+    } */
+    
     
     .bottom-container {
         width: 100%;
-        height: fit-content;
+        height: 100%;
+        padding: 5vh 2vw;
         margin: 0;
         background-color: var(--color-neutral-700);
         overflow: hidden;
@@ -38,7 +57,11 @@
 
     .booking-info {
         height: 100%;
-        padding: 10px 20px;
+        padding: 1vh 1vw;
+    }
+
+    .booking-info h2 {
+        margin-bottom: 5px;
     }
 
     .booking-info p,

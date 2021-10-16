@@ -1,18 +1,19 @@
 
 .map-container {
-    height: 650px;
+    height: 500px;
     width: 375px;
     z-index: 50;
     background-color: lightblue;
     }
 
-    .bike {
+    .icons.bike {
         fill: #000;
         width: 22px;
         height: 22px;
     }
 
-    .bike:hover {
+    .icons.bike:active,
+    .icons.bike:hover {
         fill: var(--color-success-dark);
         cursor: pointer;
     }

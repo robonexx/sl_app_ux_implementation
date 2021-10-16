@@ -9,8 +9,8 @@ const BookVehicle = (props) => {
     const {longitude, latitude} = props;
     return (
         <div className="map-wrapper">
-            <SlMap>
-            </SlMap>
+            <SlMap/>
+          
             <div className="booking-text">
                <BookBikeBtn />
             </div>

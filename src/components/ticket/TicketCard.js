@@ -7,19 +7,21 @@ import Timer from '../timer/Timer';
 
 const TicketCard = () => {
 
+    
+
     return (
         <div className="ticket-card">
             <div className="ticket-info">
                <h1><Timer seconds={4500}/></h1> 
-            <h3>Enkelbiljett SL</h3>
+            <p>Enkelbiljett SL</p>
             <p>1 rabatterad</p>
             </div>
             <div className="ticket-bottom">
-                <div className="book-bike">
+                <div >
                 <Link
                     className="links"
                     to="/bookvehicle">
-                    <span className="bicycle-text">Reservera cykel</span><Bike />
+                    <span className="info-text">Reservera fordon</span>
                     </Link>
                     </div>
                 <div className="show-ticket">
@@ -27,7 +29,7 @@ const TicketCard = () => {
                     className="links"
                     to="/showticket"
                     >
-                        <h3>Visa biljett </h3>
+                        <span className="info-text">Visa biljett </span>
                     </Link>
                     <QrCodeIcon className="icons"/>
                     </div>

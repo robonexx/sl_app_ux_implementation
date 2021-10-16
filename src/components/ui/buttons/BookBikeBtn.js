@@ -5,12 +5,23 @@ import Bike from '../icons/Bike';
 
 const BookBikeBtn = () => {
 
-    
+    const handleClick = (e)=>{
+        console.log("this is working fine");
+        e.preventDefault();
+        e.target.style.background = 'var(--color-neutral-700)'
+        console.log(e.target);
+    }
     return (
         <div className="bike-btns-wrapper">
             <div className="bike-btn-container">
-                <button className="bike-btn book-bike">Cykel</button>
-                <button className="bike-btn book-scooter">Scooter</button>
+                <button className="vehicle-btn book-bike">
+                    Cykel
+                    {/* <Bike /> */}
+                </button>
+                <button onClick={handleClick} className="vehicle-btn book-scooter">
+                    Scooter
+                   {/*  <ElScooter  /> */}
+                </button>
             </div>
             <div className="search-add bottom-container">                
                 <div className="booking-info">

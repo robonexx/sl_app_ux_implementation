@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-        <div className="app-wrapper">
+        <div className="wrapper">
           <Switch>
             <Route exact path="/" component={TravelMap} />
             <Route exact path="/ticketspage" component={TicketsPage} />

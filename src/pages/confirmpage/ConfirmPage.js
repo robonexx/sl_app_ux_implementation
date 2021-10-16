@@ -4,7 +4,7 @@ import './ConfirmPage.css'
 import TicketType from '../../components/ticketType/TicketType';
 import TotalSum from '../../components/ticketType/TotalSum';
 
-const ConfirmTickets = ({ sum }) => {
+const ConfirmPage = ({ sum }) => {
    /*  const [count, setCount] = useState(0)
     const [sum, setSum] = useState(0)
     
@@ -28,7 +28,7 @@ const ConfirmTickets = ({ sum }) => {
     
 
     return (
-        <div className="wrapper">
+        <div className="confirm-wrapper">
             <header className="confirm-header">
                 <h1>Bekräfta</h1>
                <Link to="/ticketspage">
@@ -79,8 +79,8 @@ const ConfirmTickets = ({ sum }) => {
      );
 }
  
-export default ConfirmTickets;
+export default ConfirmPage;
 
-ConfirmTickets.defaultProps = {
-    NewSum: 0
+ConfirmPage.defaultProps = {
+    sum: 0
 };

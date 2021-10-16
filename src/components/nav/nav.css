@@ -1,0 +1,66 @@
+
+.nav {
+    border-top: 1px solid var(--color-neutral-400);
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    height: 8vh;
+    min-width: 375px;
+    max-width: 100vw;
+    background-color: var(--color-neutral-700);
+    display: inline-block;
+    z-index: 1000;
+  }
+  
+  .nav ul {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav ul .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem 1rem;
+  }
+  
+  .sl-icon {
+    stroke: var(--color-primary-100);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 2%;
+  }
+  .icons:hover {
+    stroke: var(--color-neutral-400);
+    transform: scale(0.98);
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-primary-100);
+  }
+  
+  .links:hover,
+  .links:hover > .icons {
+    stroke: var(--color-neutral-400);
+    color: var(--color-neutral-400);
+  }
+  
+  .icons {
+    fill: #000;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: 768) {
+      .nav {
+      width: 375px
+    }
+  }
+  

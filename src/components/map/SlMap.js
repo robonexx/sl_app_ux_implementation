@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import ReactMapGl from 'react-map-gl';
 import CustomeMarker from './CustomeMarker'
+import './SlMap.css'
 
-const SlMap = ({latitude, longitude}) => {
+const SlMap = () => {
 
   const [viewport, setViewport] = useState({
     width: 375,

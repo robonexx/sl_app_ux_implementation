@@ -1,16 +1,17 @@
 .App {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
-.app-wrapper {
+.wrapper {
   margin: 0 auto;
-  width: 375px;
-  height: calc(812px - 8vh);
-  color: #fff;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
 }
 
+
+/* 
 .nav {
   border-top: 1px solid var(--color-neutral-400);
   position: relative;
@@ -35,15 +36,15 @@
   align-items: center;
   padding: 10px 20px;
 }
-
-.sl-icon {
+ */
+/* .sl-icon {
   stroke: var(--color-primary-100);
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   top: 2%;
-}
-.hantera-biljett-subheader .icons:hover {
+} */
+/* .hantera-biljett-subheader .icons:hover {
   stroke: var(--color-neutral-400);
   transform: scale(0.98);
 }
@@ -61,3 +62,9 @@
   stroke: var(--color-neutral-400);
   color: var(--color-neutral-400);
 }
+
+.icons {
+  fill: #000;
+  width: 22px;
+  height: 22px;
+} */
