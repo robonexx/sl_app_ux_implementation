@@ -11,7 +11,7 @@ function convertTime(sec) {
     (min.toString().length === 1) ? min = '0'+min : void 0;    
         
 
-    return hours+'h '+min + 'min';
+    return hours+'h '+ min + 'min';
 }
 
 

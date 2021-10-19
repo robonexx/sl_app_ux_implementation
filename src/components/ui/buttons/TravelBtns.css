@@ -1,9 +1,10 @@
 .travel-btns-wrapper {
 width: 375px;
-height: 162px;
-position: relative;
+height: 178px;
+position: absolute;
+bottom: 8vh;
 z-index: 100;
-background: linear-gradient(to bottom, transparent 10%, var(--color-neutral-700) 80%);
+margin: 0;
 }
 
 .travel-btn-container {
@@ -18,6 +19,7 @@ border: none;
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
 color: var(--color-primary-100);
+text-align: center;
 } 
 
 .travel-btn.search {
@@ -30,13 +32,14 @@ color: var(--color-primary-100);
 }
 
 .bottom-container {
-    width: 100%;
-    margin: 0;
+    position: absolute;
+    height: 118px;
     background-color: var(--color-neutral-700);
     overflow: hidden;
+    padding: 15px;
 }
-
+/* 
 .search-add {
     padding-top: 15px;
-}
+} */
 

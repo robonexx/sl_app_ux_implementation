@@ -1,0 +1,60 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Slussen",
+        "description": "Subway station slussen in Stockholm, Sweden"
+      },
+      "geometry": {
+        "coordinates": [18.07248804438448, 59.31951525682159],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Gamla Stan",
+        "description": "Subway station Gamla stan"
+      },
+      "geometry": {
+        "coordinates": [18.06745918103826, 59.32316502594372],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Medborgarplatsen",
+        "description": "Subway station Medborgarplatsen"
+      },
+      "geometry": {
+        "coordinates": [18.073339016190776, 59.315091943601246],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Skanstull",
+        "description": "Subway station Skanstull"
+      },
+      "geometry": {
+        "coordinates": [18.075807988683835, 59.30808856970841],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Gullmarsplan",
+        "description": "Subway Statio Gullmarsplan"
+      },
+      "geometry": {
+        "coordinates": [18.080409120605218, 59.2989706613383],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

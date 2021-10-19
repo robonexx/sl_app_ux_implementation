@@ -1,5 +1,5 @@
 import React from 'react';
-import SlMap from '../../components/map/SlMap'
+import Map from '../../components/map/Map';
 import BookBikeBtn from '../../components/ui/buttons/BookBikeBtn';
 
 import './booking.css'
@@ -9,7 +9,7 @@ const BookVehicle = (props) => {
     const {longitude, latitude} = props;
     return (
         <div className="map-wrapper">
-            <SlMap/>
+            <Map/>
           
             <div className="booking-text">
                <BookBikeBtn />

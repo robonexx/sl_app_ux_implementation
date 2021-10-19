@@ -3,6 +3,8 @@ import ReactMapGl from 'react-map-gl';
 import CustomeMarker from './CustomeMarker'
 import './SlMap.css'
 
+const api_key = 'pk.eyJ1IjoicnViYWR1YiIsImEiOiJja3U1ZXR2ajcwbHc5MnZvNTI0d2cwNGl2In0.7u6g9rRD0OoysTdKbeNb4Q'
+
 const SlMap = () => {
 
   const [viewport, setViewport] = useState({
@@ -13,17 +15,20 @@ const SlMap = () => {
     zoom: 14
   })
 
+
   /* const {longitude, latitude} = props; */
 
   return (
   <div className="map-container">
       <ReactMapGl
         {...viewport}
-        mapboxApiAccessToken={process.env.REACT_APP_MAP_TOKEN}
+        style={{ width: '375px', height: '680px'}}
         onViewportChange={nextViewport => setViewport(nextViewport)}
         mapStyle='mapbox://styles/mapbox/streets-v11'
+        mapboxApiAccessToken={api_key}
+        container={Map}
       >
-        {<CustomeMarker longitude={18.06745918103826} latitude={59.32316502594372} />}
+        <CustomeMarker longitude={18.06745918103826} latitude={59.32316502594372} />
         <CustomeMarker longitude={18.07248804438448} latitude={59.31951525682159} />
         <CustomeMarker longitude={18.073339016190776} latitude={59.315091943601246} />
         <CustomeMarker longitude={18.075807988683835} latitude={59.30808856970841} />

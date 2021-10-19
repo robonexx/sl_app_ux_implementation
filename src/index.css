@@ -14,7 +14,8 @@ body {
   font-family: 'slRegular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  width: 100vw;
+  height: 100vh;
 }
 @font-face {
   font-family: 'slRegular';

@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-        <div className="wrapper">
+        <div className="app-wrapper">
           <Switch>
             <Route exact path="/" component={TravelMap} />
             <Route exact path="/ticketspage" component={TicketsPage} />
@@ -23,9 +23,7 @@ function App() {
             <Route exact path="/bookvehicle" component={BookVehicle} />
             <Route exact path="/payment" component={PaymentPage} />
             
-          </Switch>
-          {/* <TicketsPage /> */}
-          {/* <ConfirmTickets /> */}
+            </Switch>
             <Nav/>
           </div>      
       </div>

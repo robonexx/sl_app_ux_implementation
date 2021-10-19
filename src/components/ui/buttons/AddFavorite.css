@@ -1,7 +1,7 @@
 .add-favorite {
     width: fit-content;
     height: 46px;
-    margin: 3px 10px;
+    margin: 0.25rem 5%;
     border: none;
     border-radius: 5px;
     display: flex;
@@ -10,7 +10,6 @@
     color: var(--color-neutral-100);
     background-color: var(--color-neutral-600);
     font-family: 'slRegular';
-    font-size: 1.2em;
 }
 
 .add {

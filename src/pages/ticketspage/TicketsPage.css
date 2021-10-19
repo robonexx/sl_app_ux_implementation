@@ -1,32 +1,9 @@
-/* 
-  h1 {
-    font-size: 2.2rem;
-  }
-  h2 {
-    font-size: 1.6rem;
-    margin-top: 5px;
-    margin-left: 5px;
-  }
-  h3 {
-    font-size: 1.2rem;
-  }
-  h4 {
-    font-size: 1.6em;
-  }
-  h5 {
-    font-size: 1.2em;
-  }
-  h6 {
-    font-size: 1em;
-  }
-  p {
-    font-family: 'slRegular';
-    color: #c1c2c7;
-  } */
+
   .tickets-wrapper {
-    width: 100%;
+    position: relative;
+    width: 375px;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 5px 5px;
     background-color: var(--color-neutral-700);
     color: #fff;
@@ -39,7 +16,7 @@
     
   }
   .slBold {
-    
+    font-size: 1.2rem;
     font-family: 'slBold';
   }
   .slRegular {
@@ -49,6 +26,7 @@
 
   .tickets-wrapper h2 {
     font-family: 'slBold';
+    font-size: 1.2rem;
     width: fit-content;
     border-top: 5px solid var(--color-primary-400);
     padding: 5px 0;
@@ -68,7 +46,7 @@
     justify-content: center;
     background-color: #12151a;
     height: fit-content;
-    width: 348px;
+    width: 90%;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -81,23 +59,23 @@
     width: 100%;
     border-bottom: 1px solid #c1c2c7;
   }
-  .biljett-typ {
+  .ticket-type {
     font-family: slBold;
     margin: 2px 5px 0 0px;
     width: 100%;
     border-bottom: 1px solid #c1c2c7;
     color: #f2f2f4;
   }
-  .biljett-typ p,
+  .ticket-type p,
   h3 {
     padding: 5px 0 5px 5px;
   }
-  .biljett-typ p {
+  .ticket-type p {
     font-family: slRegular;
     margin-top: 5px;
   }
   
-  .hantera-biljett-subheader {
+  .handle-tickets-subheader {
     width: 100%;
     height: 100%;
     display: flex;
@@ -109,7 +87,7 @@
     height: 32px;
   }
 
-  .hantera-biljett-subheader .icons:hover {
+  .handle-tickets-subheader .icons:hover {
     stroke: var(--color-neutral-400);
     transform: scale(0.98);
   }
@@ -130,15 +108,15 @@
     padding-right: 14px;
   }
   
-  #hantera-biljetter,
+  #handle-tickets-subheader,
   #kop-biljetter {
     width: 100%;
   }
 
-  #hantera-biljetter h3 {
+  #handle-tickets-subheader h3 {
     margin: 10px 0 10px 5px;
   }
-  /* #hantera-biljetter .blue-border {
+  /* #handle-ticketser .blue-border {
     margin-top: 0px;
     width: 168px;
   }

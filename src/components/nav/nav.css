@@ -1,12 +1,14 @@
 
 .nav {
     border-top: 1px solid var(--color-neutral-400);
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    margin: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
     height: 8vh;
-    min-width: 375px;
-    max-width: 100vw;
+    max-width: 100%;
+    width: 375px;
     background-color: var(--color-neutral-700);
     display: inline-block;
     z-index: 1000;
