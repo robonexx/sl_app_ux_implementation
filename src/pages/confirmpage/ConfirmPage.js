@@ -25,8 +25,7 @@ const ConfirmPage = ({ sum }) => {
         }
         
     } */
-    
-    
+
 
     return (
         <div className="confirm-wrapper">

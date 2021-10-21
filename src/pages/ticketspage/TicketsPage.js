@@ -6,7 +6,7 @@ import TicketCard from '../../components/ticket/TicketCard'
 
 const TicketsPage = () => {
 
-     const activeTicket = false
+     const activeTicket = true
      
 
     return (
