@@ -1,6 +1,6 @@
 .search-bar {
-    margin: 0 auto;
-    width: 90%;
+    margin: 1em auto;
+    width: 96%;
     height:46px;
     display: flex;
     align-items: center;

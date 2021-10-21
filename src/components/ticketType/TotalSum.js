@@ -1,12 +1,11 @@
-import React, { useState, } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './tickettype.css'
 
 
-const TotalSum = ({ value, count }) => {
-    const [sum, setSum] = useState(0)
+const TotalSum = ({ sum }) => {
 
-    let price = value
+
 
     return (
         <>

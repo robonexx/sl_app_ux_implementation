@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import './ConfirmPage.css'
 import TicketType from '../../components/ticketType/TicketType';
 import TotalSum from '../../components/ticketType/TotalSum';
+import LeftArrow from '../../components/ui/icons/LeftArrow';
 
 const ConfirmPage = ({ sum }) => {
    /*  const [count, setCount] = useState(0)
@@ -30,10 +31,11 @@ const ConfirmPage = ({ sum }) => {
     return (
         <div className="confirm-wrapper">
             <header className="confirm-header">
-                <h1>Bekräfta</h1>
-               <Link to="/ticketspage">
-                <span>Avbryt</span>
+            <Link to="/ticketspage">
+                <span><LeftArrow /></span>
                 </Link>
+                <h1>Bekräfta</h1>
+               
             </header>
 
             <section className="confirm-top-section">
@@ -66,13 +68,13 @@ const ConfirmPage = ({ sum }) => {
                     onClick={increment}>+</button>
                 </div>
             </section> */}
-           {/*  <section className="confirm-section">
+            {/* <section className="confirm-section">
                 <h3>Att betala</h3>
                 <h3>{sum} kr</h3>
             </section> */}
-            <TotalSum sum={sum}/>
+            <TotalSum sum={sum} />
             
-             <Link to="/payment" className="pay-btn-div">
+             <Link to="/payment">
                 <button className="pay-btn">Fortsätt till betalning</button>
             </Link>
         </div>

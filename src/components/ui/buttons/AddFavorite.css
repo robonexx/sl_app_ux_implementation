@@ -1,7 +1,7 @@
 .add-favorite {
-    width: fit-content;
+    width: 188px;
     height: 46px;
-    margin: 0.25rem 5%;
+    margin: 0 0.5rem;
     border: none;
     border-radius: 5px;
     display: flex;
@@ -12,6 +12,7 @@
     font-family: 'slRegular';
 }
 
-.add {
-    font-size: 20px;   
+.add.icons {
+    width: 26px;    
+    height: 26px;
 }

@@ -1,21 +1,25 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import './tickettype.css'
+import TotalSum from './TotalSum';
 
 
-const TicketType = ({ ticketType }) => {
+
+const TicketType = ({ ticketType, value }) => {
     const [count, setCount] = useState(0)
-    /* const [sum, setSum] = useState(0)
+    const [sum, setSum] = useState(0)
 
-    let price = value */
+
+    let price = value
 
     const increment = () => {
         setCount(count + 1)
-        /* setSum((count + 1) * price) */
+        setSum((count + 1) * price)
+
     }
     let decrement = () => {
         setCount(count - 1)
-        /* setSum((count -1) * price) */
+        setSum((count -1) * price)
     }
     if (count <= 0) {
         decrement = () => {
@@ -23,6 +27,9 @@ const TicketType = ({ ticketType }) => {
         }
         
     }
+
+    
+
 
     return (
         <>

@@ -1,10 +1,11 @@
 .confirm-wrapper {
-   margin: 0 auto;
+    margin: 0 auto;
     width: 375px;
     height: 100%;
     background-color: var(--color-neutral-700);
     color: #fff;
     font-family: 'slRegular';
+    padding: 0.25rem;
   }
 
   section {
@@ -27,19 +28,18 @@
     position: relative;
     font-family: slBold;
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 12px 0;
     line-height: 42px;
-    width: 371px;
-    border-bottom: 1px solid #c1c2c7;
+    width: 375px;
+    border-bottom: 1px solid var(--color-neutral-300);
     font-family: 'slBold';
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .confirm-header h1 {
-      margin-left: 40px;
-        flex: 6;
+      flex: 1;
+      text-align: center;
   }
 
   .confirm-header a {
@@ -47,8 +47,10 @@
     color: var(--color-neutral-100);
   }
   .confirm-header span {
-      margin-right: 5px;
-      flex: 1;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    
   }
   .confirm-header span:hover {
       color: var(--color-neutral-300);
@@ -89,21 +91,14 @@
       font-size: 20px;
   }
 
-  .pay-btn-div {
-      position: relative;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      text-decoration: none;
-  }
-
   .pay-btn {
-    margin: 0 auto;
-    margin-bottom: 8vh;
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
     width: 90%;
     height: 32px;
-    
     border: none;
     border-radius: 5px;
     background-color: var(--color-primary-400);
@@ -117,6 +112,20 @@
     background-color: var(--color-dark-blue);
 }
   
+
+@media (max-width: 768px) {
+  .confirm-wrapper {
+    width: 100vw;
+  }
+
+  .confirm-header {
+    width: 100vw;
+  }
+  
+  .confirm-header span {
+    padding: 0.5rem;
+  }
+}
 
 
 

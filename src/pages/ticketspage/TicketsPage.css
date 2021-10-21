@@ -3,7 +3,6 @@
     position: relative;
     width: 375px;
     height: 100%;
-    margin: 0 auto;
     padding: 5px 5px;
     background-color: var(--color-neutral-700);
     color: #fff;
@@ -16,7 +15,6 @@
     
   }
   .slBold {
-    font-size: 1.2rem;
     font-family: 'slBold';
   }
   .slRegular {
@@ -24,21 +22,15 @@
     font-family: 'slRegular';
   }
 
-  .tickets-wrapper h2 {
+  .tickets-wrapper .tickets-header {
     font-family: 'slBold';
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: fit-content;
     border-top: 5px solid var(--color-primary-400);
     padding: 5px 0;
+    margin-bottom: 10px;
   }
 
-/* 
-  .blue-border {
-    margin: 0 0 10px 0;
-    border-bottom: 5px solid var(--color-primary-400);
-    width: 164px;
-    height: 0.3rem;
-  } */
   .ticket-holder {
     display: flex;
     margin: 5px auto;
@@ -53,42 +45,43 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
   }
-  .tickets-header {
-    font-family: slBold;
-    margin: 5px 5px 10px 5px;
-    width: 100%;
-    border-bottom: 1px solid #c1c2c7;
-  }
+  
+  
   .ticket-type {
     font-family: slBold;
     margin: 2px 5px 0 0px;
     width: 100%;
-    border-bottom: 1px solid #c1c2c7;
+    border-bottom: 1px solid var(--color-neutral-300);
     color: #f2f2f4;
-  }
-  .ticket-type p,
-  h3 {
-    padding: 5px 0 5px 5px;
-  }
-  .ticket-type p {
-    font-family: slRegular;
-    margin-top: 5px;
-  }
-  
-  .handle-tickets-subheader {
-    width: 100%;
-    height: 100%;
-    display: flex;
     align-items: center;
   }
 
-  .add.icons {
-    width: 32px;
-    height: 32px;
+  .ticket-type p {
+    padding: 2px 0 5px 5px;
+  }
+  .ticket-type p {
+    font-family: slRegular;
+    font-size: 1rem;
+    color: var(--color-neutral-300);
   }
 
-  .handle-tickets-subheader .icons:hover {
-    stroke: var(--color-neutral-400);
+  
+  .tickets-sub-header {
+    width: 100%;
+    border-top: 1px solid var(--color-neutral-300);
+    font-size: 1.2rem;
+  }
+
+  .ticket-type h3 {
+    padding: 2px 0 0px 5px;
+  }
+  
+  .handle-tickets h3 {
+    padding: 0.25rem 0;
+  }
+
+  .icons:hover {
+    stroke: var(--color-neutral-300);
     transform: scale(0.98);
   }
   
@@ -99,7 +92,7 @@
     list-style: none;
     color: var(--color-primary-100);
   }
-  .space-between {
+  .space {
     display: flex;
     justify-content: space-between;
   }
@@ -108,27 +101,20 @@
     padding-right: 14px;
   }
   
-  #handle-tickets-subheader,
-  #kop-biljetter {
-    width: 100%;
-  }
-
-  #handle-tickets-subheader h3 {
-    margin: 10px 0 10px 5px;
-  }
-  /* #handle-ticketser .blue-border {
-    margin-top: 0px;
-    width: 168px;
-  }
-  #kop-biljetter .blue-border {
-    margin: 0px 5px;
-    width: 148px;
-  } */
   
   .logga-in {
-    color: #c1c2c7;
-    font-size: 1.2em;
+    color: var(--color-neutral-300);
+    font-size: 1rem;
     font-family: slRegular;
     margin-right: 15px;
   }
+
+
+  
+@media (max-width: 768px) {
+  .tickets-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+}
   

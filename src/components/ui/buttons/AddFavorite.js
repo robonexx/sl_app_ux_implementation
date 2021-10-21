@@ -5,7 +5,8 @@ import Add from '../icons/Add';
 const AddFavorite = () => {
     return (
         <>
-            <button className="add-favorite"><span className="add">+</span>Lägg till ny favorit</button>
+            <div className="add-favorite">
+                <Add />Lägg till ny favorit</div>
         </>
      );
 }

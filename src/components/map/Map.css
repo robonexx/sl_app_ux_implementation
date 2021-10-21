@@ -5,8 +5,8 @@
   left: 50%;
   transform: translate(-50%);
   right: 0;
-  height: 500px;
-  width: 375px;
+  height: 80%;
+  width: 374px;
   z-index: 50;
 }
 /* 
@@ -46,4 +46,10 @@
 .icons.bike:hover {
   fill: var(--color-success-dark);
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+  width: 100vw;
+}
 }

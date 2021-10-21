@@ -6,13 +6,12 @@ import TicketCard from '../../components/ticket/TicketCard'
 
 const TicketsPage = () => {
 
-     const activeTicket = true
+     const activeTicket = false
      
 
     return (
         <div className="tickets-wrapper">
           <section className='your-tickets'>
-               <div className='blue-border '></div>
                    <h2 className="tickets-header">Dina biljetter</h2>
                    {
                     !activeTicket ?
@@ -26,10 +25,9 @@ const TicketsPage = () => {
           </section>
 
           <section className='buy-tickets'>
-               <div className='blue-border '></div>
                <h2 className='tickets-header'>Köp ny biljett</h2>
                <div className='ticket-type'>
-                  <Link className="links" to="/confirmpage">  <h3>Enkelbiljett</h3> </Link>
+                  <Link className="links" to="/confirmpage">  <h3 className="tickets-sub-header">Enkelbiljett</h3> </Link>
                     <p>Obegränsat antal resor inom 75 minuter</p>
                </div>
                <div className='ticket-type'>
@@ -42,21 +40,24 @@ const TicketsPage = () => {
                </div>
           </section>
 
-          <section id='handle-tickets'>
-               <div className='blue-border'></div>
-               <h2 className='tickets-header'>Hantera Biljetter</h2>
-               <div className='ticket-type handle-tickets-subheader'>
+          <section className='handle-tickets'>
+                   <h2 className='tickets-header'>Hantera Biljetter</h2>
+                   <div className='ticket-type'>
+                    <h3 className="tickets-sub-header">SL-kort</h3>
+                    <p>Se innehåll och köp biljetter till ditt SL-kort</p>
+               </div>
+               <div className='ticket-type'>
                     <h3>Köphistorik och kvitton</h3>
                </div>
-               <div className='space-between ticket-type handle-tickets-subheader'>
+               <div className='space ticket-type'>
                     <h3>Lägg till nytt betalkort</h3>
-                    <Add className="icons" />
+                    <Add className="icons add" />
                </div>
-               <div className='space-between ticket-type handle-tickets-subheader'>
+               <div className='space ticket-type'>
                     <h3>Förlustgaranti</h3>
                     <span className='logga-in'>Logga in för att aktivera</span>
                </div>
-               <div className='ticket-type handle-tickets-subheader'>
+               <div className='ticket-type'>
                     <h3>Återskapa appbiljetter</h3>
                </div>
           </section>

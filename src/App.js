@@ -17,11 +17,11 @@ function App() {
         <div className="app-wrapper">
           <Switch>
             <Route exact path="/" component={TravelMap} />
-            <Route exact path="/ticketspage" component={TicketsPage} />
-            <Route exact path="/confirmpage" component={ConfirmPage} />
-            <Route exact path="/showticket" component={ShowTicket} />
-            <Route exact path="/bookvehicle" component={BookVehicle} />
-            <Route exact path="/payment" component={PaymentPage} />
+            <Route path="/ticketspage" component={TicketsPage} />
+            <Route path="/confirmpage" component={ConfirmPage} />
+            <Route path="/showticket" component={ShowTicket} />
+            <Route path="/bookvehicle" component={BookVehicle} />
+            <Route path="/payment" component={PaymentPage} />
             
             </Switch>
             <Nav/>

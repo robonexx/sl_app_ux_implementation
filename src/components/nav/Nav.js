@@ -9,16 +9,16 @@ const Nav = () => {
     return (
         <div className="nav">
             <ul>
-                <Link path to="/" className="links">
+                <Link to="/" className="links">
                     <Journey className="icons" />
                     Resa
                 </Link>
-                <Link path to="/ticketspage"
+                <Link to="/ticketspage"
                 className="links">
                     <Tickets className="icons" />
                     Biljetter
                 </Link>
-                <Link path to="more"
+                <Link to="more"
                 className="links">
                     <More className="icons" />
                     Mer

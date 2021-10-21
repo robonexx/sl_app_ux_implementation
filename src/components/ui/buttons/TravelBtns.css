@@ -5,6 +5,7 @@ position: absolute;
 bottom: 8vh;
 z-index: 100;
 margin: 0;
+
 }
 
 .travel-btn-container {
@@ -31,15 +32,25 @@ text-align: center;
     background-color: var(--color-neutral-800);
 }
 
-.bottom-container {
+.travel-btns-wrapper .bottom-container {
     position: absolute;
     height: 118px;
     background-color: var(--color-neutral-700);
     overflow: hidden;
-    padding: 15px;
+    padding: 0.25rem;
 }
 /* 
 .search-add {
     padding-top: 15px;
 } */
+
+@media (max-width: 768px) {
+    .travel-btns-wrapper {
+    width: 100vw;
+  }
+
+  .travel-btn {
+      width: 50%;
+  }
+}
 

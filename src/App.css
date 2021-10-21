@@ -1,20 +1,26 @@
 .App {
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 100vh;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .app-wrapper {
-  position: relative;
-  margin: 0 auto;
+  position: absolute;
+  max-width: 768px;
   width: 375px;
-  width: 100vw;
-  height: 100vh;
   height: 760px;
   overflow: hidden;
+  box-sizing: content-box !important;
+  background-color: var(--color-neutral-700);
+}
+
+@media (max-width: 768px) {
+  .app-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 

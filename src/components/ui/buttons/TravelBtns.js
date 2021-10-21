@@ -10,7 +10,7 @@ const TravelBtns = () => {
                 <button className="travel-btn search">Sök resa</button>
                 <button className="travel-btn departures">Avgångar</button>
             </div>
-            <div className="search-add bottom-container">
+            <div className="bottom-container">
                 <SearchBar />
                 <AddFavorite />
             </div>
