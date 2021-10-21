@@ -52,7 +52,7 @@
     margin: 2px 5px 0 0px;
     width: 100%;
     border-bottom: 1px solid var(--color-neutral-300);
-    color: #f2f2f4;
+    color: var(--color-neutral-200);
     align-items: center;
   }
 
@@ -68,12 +68,12 @@
   
   .tickets-sub-header {
     width: 100%;
-    border-top: 1px solid var(--color-neutral-300);
-    font-size: 1.2rem;
+    border-top: 1px solid var(--color-neutral-200);
   }
 
   .ticket-type h3 {
     padding: 2px 0 0px 5px;
+    font-size: 1.2rem;
   }
   
   .handle-tickets h3 {
