@@ -4,7 +4,8 @@
       "type": "Feature",
       "properties": {
         "title": "Slussen",
-        "description": "Subway station slussen in Stockholm, Sweden"
+        "description": "Bike at subway station slussen in Stockholm, Sweden",
+        "bookable": true
       },
       "geometry": {
         "coordinates": [18.07248804438448, 59.31951525682159],
@@ -15,7 +16,8 @@
       "type": "Feature",
       "properties": {
         "title": "Gamla Stan",
-        "description": "Subway station Gamla stan"
+        "description": "Bike at subway station Gamla stan",
+        "bookable": false
       },
       "geometry": {
         "coordinates": [18.06745918103826, 59.32316502594372],
