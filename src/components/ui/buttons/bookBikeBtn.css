@@ -69,3 +69,14 @@
     .booking-info span {
         margin-left: 10px;
     }
+
+
+    @media (max-width: 768px) {
+        .bike-btns-wrapper {
+            width: 100vw;
+        }
+
+        .vehicle-btn {
+            width: 50%;
+        }
+    }
