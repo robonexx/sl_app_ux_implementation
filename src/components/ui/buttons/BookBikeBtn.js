@@ -21,11 +21,12 @@ const BtnsWrapper = styled.div`
     z-index: 100;
 `
 const ButtonToggle = styled(BookBtn)`
-  background: #4c5157;
+  background: #20252c;
   ${({ active }) =>
     active &&
     `
-    background: #20252c;
+    background: #4c5157;
+    
   `}
 `;
 const BtnGroup = styled.div`
@@ -41,12 +42,6 @@ const types = ['Bike', 'Scooter'];
 const BookBikeBtn = () => {
     const [active, setActive] = useState(types[0])
 
-    /* const handleClick = (e)=>{
-        console.log("this is working fine");
-        e.preventDefault();
-        e.target.style.background = 'var(--color-neutral-700)'
-        console.log(e.target);
-    } */
     return (
         
         <BtnsWrapper >
@@ -62,12 +57,29 @@ const BookBikeBtn = () => {
                     </ButtonToggle>
                ))}
             </BtnGroup>
-            <div className="search-add bottom-container">                
+            <div className="search-add bottom-container">
                 <div className="booking-info">
-                    <h2>Din cykel är nu bokad</h2>
-                    <p>ID: 76487 888</p>
-                    <span>Lås upp cykel med Qr koden på din biljett</span>
-                </div>
+                    
+                         {active.type !== 'Bike'  ?
+                         (
+                             <>
+                             <h2>Din cykel är nu bokad</h2>
+                             <p>ID: 76487 888</p>
+                             <span>Lås upp cykeln med Qr koden på din biljett</span>
+                             </>
+                         ) : (
+                             <>
+                             <h2>Din scooter är nu bokad</h2>
+                             <p>ID: 76487 889</p>
+                                 <span>Lås upp scootern med Qr koden på din biljett</span>
+                             </>
+                     )}
+                      </div>
+                   
+                   
+               
+        
+                
             </div>
             </BtnsWrapper>
             
