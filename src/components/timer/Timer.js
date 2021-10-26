@@ -7,11 +7,13 @@ function convertTime(sec) {
     var min = Math.floor(sec/60);
     (min >= 1) ? sec = sec - (min*60) : min = '00';
    
+    var s = Math.floor(sec/60);
+    (s >= 1) ? sec = sec - (60) : s = '00';
 
     (min.toString().length === 1) ? min = '0'+min : void 0;    
         
 
-    return hours+'h '+ min + 'min';
+    return hours+'h '+ min + 'min '+ sec + 's';
 }
 
 
