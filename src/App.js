@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Nav from './components/nav/Nav'
@@ -8,13 +8,13 @@ import ShowTicket from './pages/showTicket/ShowTicket';
 import TravelMap from './pages/travelMap/TravelMap';
 import BookVehicle from './pages/bookvehiclepage/bookVehiclePage';
 import PaymentPage from './pages/paymentpage/PaymentPage';
-import data from './content/content'
-import TicketsTest from './TicketsTest';
+
+
 
 
 function App() {
 
-  const {ticketTypes} = data
+  
   return (
     <Router>
     <div className="App">
@@ -26,11 +26,6 @@ function App() {
             <Route path="/showticket" component={ShowTicket} />
             <Route path="/bookvehicle" component={BookVehicle} />
             <Route path="/payment" component={PaymentPage} />
-            <Route path="/ticketstest">
-              <TicketsTest ticketTypes={ticketTypes} />
-            </Route>
-
-            
             </Switch>
             <Nav/>
           </div>      
