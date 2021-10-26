@@ -8,7 +8,7 @@
     left: 50%;
     transform: translate(-50%);
     height: 8vh;
-    width: 375px;
+    width: 376px;
     background-color: var(--color-neutral-700);
     display: block;
     z-index: 1000;
