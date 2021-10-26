@@ -15,7 +15,7 @@ const BookVehicle = () => {
             <div className="booking-text">
                <BookBikeBtn />
             </div>
-            <div className="bottom-container">
+            <div className="book-bottom-container">
                 <div className="booking-info">
                     
                          {/* {active.type === 'Bike'  ?
