@@ -48,6 +48,7 @@
   cursor: pointer;
 }
 
+
 @media (max-width: 768px) {
   .map-container {
   width: 100vw;

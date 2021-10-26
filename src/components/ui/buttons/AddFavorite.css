@@ -10,6 +10,7 @@
     color: var(--color-neutral-100);
     background-color: var(--color-neutral-600);
     font-family: 'slRegular';
+    z-index: 10;
 }
 
 .add.icons {

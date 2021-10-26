@@ -14,6 +14,7 @@ const BookVehicle = () => {
             <div className="booking-text">
                <BookBikeBtn />
             </div>
+            
         </div>
      );
 }

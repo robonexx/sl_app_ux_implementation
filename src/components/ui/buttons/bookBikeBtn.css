@@ -52,11 +52,12 @@
         height: 100%;
        
         margin: 0;
-        background-color: var(--color-neutral-600);
+        background-color: var(--color-neutral-700);
         overflow: hidden;
     }
 
     .booking-info {
+        margin-top: 1rem;
         height: 100%;
         padding: 1vh 1vw;
     }

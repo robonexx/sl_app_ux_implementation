@@ -4,7 +4,7 @@
       "type": "Feature",
       "properties": {
         "title": "Slussen",
-        "description": "Bike at subway station slussen in Stockholm, Sweden",
+        "adress": "Katarinavägen 2 A, 116 45 Stockholm",
         "bookable": true
       },
       "geometry": {
@@ -16,8 +16,8 @@
       "type": "Feature",
       "properties": {
         "title": "Gamla Stan",
-        "description": "Bike at subway station Gamla stan",
-        "bookable": false
+        "adress": "Munkbroleden 10, 111 28 Stockholm",
+        "bookable": true
       },
       "geometry": {
         "coordinates": [18.06745918103826, 59.32316502594372],
@@ -28,7 +28,8 @@
       "type": "Feature",
       "properties": {
         "title": "Medborgarplatsen",
-        "description": "Subway station Medborgarplatsen"
+        "adress": "Katarina-Sofia, 116 21 Stockholm",
+        "bookable": true
       },
       "geometry": {
         "coordinates": [18.073339016190776, 59.315091943601246],
@@ -39,7 +40,8 @@
       "type": "Feature",
       "properties": {
         "title": "Skanstull",
-        "description": "Subway station Skanstull"
+        "adress": "Götgatan 124, 118 62 Stockholm",
+        "bookable": true
       },
       "geometry": {
         "coordinates": [18.075807988683835, 59.30808856970841],
@@ -50,7 +52,8 @@
       "type": "Feature",
       "properties": {
         "title": "Gullmarsplan",
-        "description": "Subway Statio Gullmarsplan"
+        "adress": "Johanneshovsvägen 18, 121 18 Johanneshov",
+        "bookable": true
       },
       "geometry": {
         "coordinates": [18.080409120605218, 59.2989706613383],

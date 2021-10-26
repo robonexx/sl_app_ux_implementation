@@ -11,21 +11,29 @@ const BookBtn = styled.button`
     color: #fff;
     text-align: center;
     /* background: #20252c; */
+    @media (max-width: 768px) {
+    width: 50%;
+  }
 `
 
 const BtnsWrapper = styled.div`
     width: 375px;
-    height: 220px;
+    height: 178px;
     position: absolute;
     bottom: 8vh;
     z-index: 100;
+
+    @media (max-width: 768px) {
+    width: 100vw;
+  }
+
 `
 const ButtonToggle = styled(BookBtn)`
-  background: #20252c;
+  background: #000000;
   ${({ active }) =>
     active &&
     `
-    background: #4c5157;
+    background: #20252c;
   `}
 `;
 const BtnGroup = styled.div`
@@ -72,9 +80,7 @@ const BookBikeBtn = () => {
                      )} */}
                       </div>
                    
-                   
-               
-        
+
                 
             </div>
             </BtnsWrapper>

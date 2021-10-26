@@ -7,7 +7,7 @@ import './TravelMap.css'
 const TravelMap = () => {
     return (
         <div className="map-wrapper">
-             <Map />
+             <SlMap />
             
             <TravelBtns />
         </div>

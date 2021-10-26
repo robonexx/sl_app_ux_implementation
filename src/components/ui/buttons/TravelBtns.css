@@ -5,7 +5,7 @@ position: absolute;
 bottom: 8vh;
 z-index: 100;
 margin: 0;
-
+background: linear-gradient(to bottom, transparent 10%, var(--color-neutral-700) 90%);
 }
 
 .travel-btn-container {
@@ -38,6 +38,7 @@ text-align: center;
     background-color: var(--color-neutral-700);
     overflow: hidden;
     padding: 0.25rem;
+    padding-bottom: 5rem;
 }
 /* 
 .search-add {

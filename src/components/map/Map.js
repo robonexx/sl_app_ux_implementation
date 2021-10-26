@@ -10,13 +10,16 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicnViYWR1YiIsImEiOiJja3U1ZXR2ajcwbHc5MnZvNTI0d
 
 const Marker = ({ onClick, children, feature }) => {
   const _onClick = (e) => {
-    onClick(feature.properties.description);
+    onClick(`
+    Cykel bokad på adress: ${feature.properties.adress}
+    Närmaste t-bana station: ${feature.properties.title}`
+    );
   };
 
   return (
     <div onClick={_onClick} /* className="marker" */>
       <Bike>
-      {children}
+      {/* {children} */}
       </Bike>
       
     </div>
@@ -70,8 +73,9 @@ const Map = () => {
     return () => map.remove();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const markerClicked = (title) => {
-    window.alert(title);
+  const markerClicked = (text) => {
+    window.alert(text);
+    return text
   };
 
   return (
@@ -82,6 +86,8 @@ const Map = () => {
         </div>
       </div> */}
       <div className="map-container" ref={mapContainerRef} />
+
+      
     </div>
   );
 };
