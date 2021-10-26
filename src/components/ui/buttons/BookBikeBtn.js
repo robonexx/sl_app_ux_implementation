@@ -61,28 +61,7 @@ const BookBikeBtn = () => {
                     </ButtonToggle>
                ))}
             </BtnGroup>
-            <div className="search-add bottom-container">
-                <div className="booking-info">
-                    
-                         {/* {active.type === 'Bike'  ?
-                         ( */}
-                             <>
-                        <h2>Din {active.type !== 'Bike' ? 'cykel' : 'scooter'} är nu bokad</h2>
-                             <p>ID: 76487 888</p>
-                             <span>Lås upp cykeln med Qr koden på din biljett</span>
-                             </>
-                        {/*  ) : (
-                             <>
-                             <h2>Din scooter är nu bokad</h2>
-                             <p>ID: 76487 889</p>
-                                 <span>Lås upp scootern med Qr koden på din biljett</span>
-                             </>
-                     )} */}
-                      </div>
-                   
-
-                
-            </div>
+           
             </BtnsWrapper>
             
      );

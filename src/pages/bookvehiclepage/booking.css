@@ -2,7 +2,12 @@
     color: var(--color-neutral-100);
 }
 
-/* 
+
+.bookBike-btn:hover {
+    background-color: var(--color-dark-blue);
+}
+  
+
 .bottom-container {
    width: 100%;
    height: 136px;
@@ -16,7 +21,7 @@
 }
 
 .booking-info {
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     height: 100%;
     padding: 1vh 1vw;
 }
@@ -28,4 +33,20 @@
 .booking-info p,
 .booking-info span {
     margin-left: 10px;
-} */
+}
+
+.bookBike-btn {
+    position: absolute;
+    bottom: 9vh;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 90%;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary-400);
+    color: var(--color-neutral-100);  
+    cursor: pointer;
+    z-index: 100;
+}

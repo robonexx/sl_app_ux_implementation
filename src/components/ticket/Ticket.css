@@ -9,6 +9,47 @@
     overflow-x: hidden;
 }
 
+.ticket-header {
+    position: relative;
+    font-family: slBold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 42px;
+    width: 375px;
+    background: var(--color-neutral-700);
+    font-family: 'slBold';
+    overflow: hidden;
+}
+
+.ticket-header a {
+    text-decoration: none;
+    color: var(--color-neutral-200);
+}
+
+.ticket-header a:first-child {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+.ticket-header a:last-child {
+    margin-right: 0.5rem;
+}
+
+  .ticket-header span:hover,
+  .ticket-header a:hover {
+      color: var(--color-neutral-300);
+      cursor: pointer;
+  }
+
+
+.ticket-header h1 {
+    font-family: slBold;
+    font-size: 1.4rem;
+    color: var(--color-neutral-200);
+}
+
+
+
 .ticket h4 {
     font-family: slBold;
     font-size: 2rem;

@@ -1,11 +1,24 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Timer from '../timer/Timer';
 import QrCode from '../qrcode/QrCode';
+import LeftArrow from '../ui/icons/LeftArrow';
 import './Ticket.css'
 
 const Ticket = () => {
     return (
-        <div className="ticket"> 
+        <div className="ticket">
+            <header className="ticket-header">
+            <Link to="/ticketspage">
+                <span><LeftArrow /></span>
+                </Link>
+                <h1>Biljetter</h1>
+                
+                <Link to="/ticketspage">
+                <span>stäng</span>
+                </Link>
+               
+            </header>
             <div className="green-ani">
                 <div class="waves">
                     <span></span>

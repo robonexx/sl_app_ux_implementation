@@ -93,7 +93,7 @@
 
   .pay-btn {
     position: absolute;
-    bottom: 10vh;
+    bottom: 9vh;
     left: 50%;
     transform: translate(-50%);
     text-align: center;
