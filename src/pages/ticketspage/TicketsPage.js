@@ -1,17 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom'
 import './TicketsPage.css'
 import Add from '../../components/ui/icons/Add'
 import TicketCard from '../../components/ticket/TicketCard'
+import ActiveTickets from '../../components/activeTickets/ActiveTickets';
 
-const TicketsPage = () => {
-
-     const activeTicket = true
+const TicketsPage = ({ isActive, setIsActive, isClicked, setIsClicked }) => {
      
 
     return (
-        <div className="tickets-wrapper">
-          <section className='your-tickets'>
+         <div className="tickets-wrapper">
+              <ActiveTickets
+               isActive={isActive}
+               setIsActive={setIsActive}
+               isClicked={isClicked}
+               setIsClicked={setIsClicked}
+              />
+         {/*  <section className='your-tickets'>
                    <h2 className="tickets-header">Dina biljetter</h2>
                    {
                     !activeTicket ?
@@ -22,7 +27,7 @@ const TicketsPage = () => {
                              <TicketCard />
                    }
                
-          </section>
+          </section> */}
 
           <section className='buy-tickets'>
                <h2 className='tickets-header'>Köp ny biljett</h2>

@@ -26,6 +26,9 @@ const ConfirmPage = ({ sum }) => {
         
     } */
 
+  
+        
+
 
     return (
         <div className="confirm-wrapper">
@@ -74,7 +77,8 @@ const ConfirmPage = ({ sum }) => {
             <TotalSum sum={sum} />
             
              <Link to="/payment">
-                <button className="pay-btn">Fortsätt till betalning</button>
+                <button className="pay-btn"
+                >Fortsätt till betalning</button>
             </Link>
         </div>
      );

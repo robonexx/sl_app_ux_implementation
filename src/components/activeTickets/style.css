@@ -1,0 +1,23 @@
+.tickets-header {
+  font-family: 'slBold';
+  font-size: 1.4rem;
+  width: fit-content;
+  border-top: 5px solid var(--color-primary-400);
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.ticket-holder {
+  display: flex;
+  margin: 5px auto;
+  align-content: center;
+  justify-content: center;
+  background-color: #12151a;
+  height: fit-content;
+  width: 90%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
