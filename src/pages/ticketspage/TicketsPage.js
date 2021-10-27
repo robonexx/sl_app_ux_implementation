@@ -45,10 +45,12 @@ const TicketsPage = ({ isValid, setIsValid }) => {
 
           <section className='handle-tickets'>
                    <h2 className='tickets-header'>Hantera Biljetter</h2>
+                   <Link to="/slcard">
                    <div className='ticket-type'>
                     <h3 className="tickets-sub-header">SL-kort</h3>
                     <p>Se innehåll och köp biljetter till ditt SL-kort</p>
-               </div>
+                    </div>
+               </Link>
                <div className='ticket-type'>
                     <h3>Köphistorik och kvitton</h3>
                </div>

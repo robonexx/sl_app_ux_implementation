@@ -11,6 +11,8 @@ import PaymentPage from './pages/paymentpage/PaymentPage';
 import {motion} from 'framer-motion'
 import Loading from './components/loading/Loading'
 
+import SlCard from './components/slCard/SlCard';
+
 
 const appLoadVariants = {
   initial: {
@@ -60,6 +62,7 @@ function App() {
             <Route path="/showticket" component={ShowTicket} />
             <Route path="/bookvehicle" component={BookVehicle} />
             <Route path="/payment" component={PaymentPage} />
+            <Route path="/slcard" component={SlCard} />
             </Switch>
             <Nav/>
           </motion.div>      

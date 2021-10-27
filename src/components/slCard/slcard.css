@@ -1,0 +1,26 @@
+
+  .card-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    transition: 0.4s ease-out;
+  }
+
+  
+  .cardContent img {
+    box-shadow:  0 0 10px rgba(0,0,0,0.9),0 0 20px rgba(0,0,0,0.6);
+  }
+
+  .cardContent:hover {
+    transform: scale(1.1);
+  }
+  
