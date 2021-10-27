@@ -91,7 +91,7 @@
       font-size: 20px;
   }
 
-  .pay-btn {
+  .confirm-btn {
     position: absolute;
     bottom: 9vh;
     left: 50%;
@@ -108,7 +108,7 @@
 
 
 
-.pay-btn:hover {
+.confirm-btn:hover {
     background-color: var(--color-dark-blue);
 }
   

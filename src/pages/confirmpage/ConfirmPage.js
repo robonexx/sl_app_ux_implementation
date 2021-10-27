@@ -77,7 +77,7 @@ const ConfirmPage = ({ sum }) => {
             <TotalSum sum={sum} />
             
              <Link to="/payment">
-                <button className="pay-btn"
+                <button className="confirm-btn"
                 >Fortsätt till betalning</button>
             </Link>
         </div>

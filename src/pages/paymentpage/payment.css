@@ -41,13 +41,20 @@
     font-size: 1.2rem;
   }
 
-  .pay-wrapper .pay-btn {
-    bottom: 15vh;
-   
+  .pay-btn {
+    position: relative;
+    margin: 1rem auto;
+    text-align: center;
+    width: 90%;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary-400);
+    color: var(--color-neutral-100);  
+    cursor: pointer;
   }
 
   .pay-wrapper span {
-    position: absolute;
     font-family: 'slRegular';
     font-weight: bold;
     bottom: 10vh;

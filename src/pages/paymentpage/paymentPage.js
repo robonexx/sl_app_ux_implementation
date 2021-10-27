@@ -17,23 +17,29 @@ const PaymentPage = () => {
 
             <div className="pay-bottom-section">
                 <p>Betala</p>
-
                 <div className="pay-bottom-info">
                     <p className="dimmed">Mottagare</p>
                     <h1>AB STORSTOCKHOLM LOKALTRAFIK</h1>
                 </div>
+
                 <div className="pay-bottom-info">
                     <p className="dimmed">Belopp</p>
                     <h1>38,00 SEK</h1>
                 </div>
-            <button
-                className="pay-btn"
-                onClick={() => setValidTicket(handleValidTicket)}>
-                Betala
-                </button>
-                <Link to="/confirmpage">
-                <span>Avbryt</span>
-                </Link>
+
+               
+                    <button
+                    className="pay-btn"
+                    onClick={() => setValidTicket(handleValidTicket)}>
+                    <Link to="/ticketspage">
+                    Betala
+                    </Link>
+                    </button>
+               
+
+                    <Link to="/confirmpage">
+                        <span>Avbryt</span>
+                    </Link>
             </div>
         </div>
      );
