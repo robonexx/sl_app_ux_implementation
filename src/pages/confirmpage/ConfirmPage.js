@@ -5,7 +5,7 @@ import TicketType from '../../components/ticketType/TicketType';
 import TotalSum from '../../components/ticketType/TotalSum';
 import LeftArrow from '../../components/ui/icons/LeftArrow';
 
-const ConfirmPage = ({ sum }) => {
+const ConfirmPage = ({ sum, isValid, setIsValid }) => {
    /*  const [count, setCount] = useState(0)
     const [sum, setSum] = useState(0)
     

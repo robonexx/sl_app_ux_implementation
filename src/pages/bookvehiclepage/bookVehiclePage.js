@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import geoJson from '../../sthlm-sub.json';
 import Bike from '../../components/ui/icons/Bike'
 
+
 import './booking.css'
 
 mapboxgl.accessToken = 'pk.eyJ1IjoicnViYWR1YiIsImEiOiJja3U1ZXR2ajcwbHc5MnZvNTI0d2cwNGl2In0.7u6g9rRD0OoysTdKbeNb4Q';
@@ -14,11 +15,15 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicnViYWR1YiIsImEiOiJja3U1ZXR2ajcwbHc5MnZvNTI0d
 const Marker = ({ onClick, children, feature }) => {
 
     const _onClick = (e) => {
-      onClick(`
-      Cykel bokad på adress: ${feature.properties.adress}
-      Närmaste t-bana station: ${feature.properties.title}
-      ID: ${feature.properties.id}
-      `);
+
+        let info = () => (
+            <>
+            <div>Boka denna cykel på adress:</div>
+               <div> {feature.properties.adress}</div>
+            <div>T-bana station: {feature.properties.title}, ID: {feature.properties.id}</div>
+       </>
+      )
+      onClick(info);
     };
   
     return (
@@ -31,7 +36,8 @@ const Marker = ({ onClick, children, feature }) => {
     );
   };
 
-const BookVehicle = () => {
+const BookVehicle = ({text}) => {
+    
     const mapContainerRef = useRef(null);
     const [textInfo, setTextInfo] = useState('')
     const [lng, setLng] = useState(18.07248804438448);
@@ -79,12 +85,12 @@ const BookVehicle = () => {
       }, []); // eslint-disable-line react-hooks/exhaustive-deps
     
       const markerClicked = (text) => {
-        window.alert(text);
+          /*  window.alert(text); */
         setTextInfo(text)
       };
     
 
-    /* const {longitude, latitude} = props; */
+      
     return (
         <div className="map-wrapper">
             {/* <Map onClick={markerClicked}/> */}
@@ -100,7 +106,7 @@ const BookVehicle = () => {
                          ( 
                           <div>   
                             <h2>{textInfo}</h2>
-                            <p>Lås upp cykeln med Qr koden på din biljett</p>
+                            {/* <p>Lås upp cykeln med Qr koden på din biljett</p> */}
                         </div>   
                          ) : (
                             <div>

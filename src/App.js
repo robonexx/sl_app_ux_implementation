@@ -6,7 +6,7 @@ import TicketsPage from './pages/ticketspage/TicketsPage'
 import ConfirmPage from './pages/confirmpage/ConfirmPage';
 import ShowTicket from './pages/showTicket/ShowTicket';
 import TravelMap from './pages/travelMap/TravelMap';
-import BookVehicle from './pages/bookvehiclepage/bookVehiclePage';
+import BookVehicle from './pages/bookvehiclepage/BookVehiclePage';
 import PaymentPage from './pages/paymentpage/PaymentPage';
 import {motion} from 'framer-motion'
 import Loading from './components/loading/Loading'

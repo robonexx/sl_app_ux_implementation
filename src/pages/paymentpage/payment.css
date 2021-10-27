@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: 60%;
     background-color: var(--color-neutral-700);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -44,6 +44,7 @@
   .pay-btn {
     position: relative;
     margin: 1rem auto;
+    padding: 4px;
     text-align: center;
     width: 90%;
     height: 32px;
@@ -53,7 +54,6 @@
     color: var(--color-neutral-100);  
     cursor: pointer;
   }
-
   .pay-wrapper span {
     font-family: 'slRegular';
     font-weight: bold;

@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
 import './payment.css'
 import Swish from '../../components/ui/icons/Swish_Symbol_P3.png'
 
 const PaymentPage = () => {
-    const [validTicket, setValidTicket] = useState(false)
+    const [isValid, setIsValid] = useState(false)
 
     const handleValidTicket = () => {
-    setValidTicket(validTicket => !validTicket);
+        console.log('clicked')
+        setIsValid(!isValid);
     }
+
+    useEffect( () => {
+        console.log(isValid);
+    }, [isValid]);
+
     return (
         <div className="pay-wrapper">
             <div className="pay-top-section">
@@ -27,14 +33,13 @@ const PaymentPage = () => {
                     <h1>38,00 SEK</h1>
                 </div>
 
-               
-                    <button
-                    className="pay-btn"
-                    onClick={() => setValidTicket(handleValidTicket)}>
-                    <Link to="/ticketspage">
+                <Link to="/ticketspage"
+                className="pay-btn"
+                onClick={() => setIsValid(handleValidTicket)}>
+                    <button >
                     Betala
-                    </Link>
                     </button>
+                    </Link>
                
 
                     <Link to="/confirmpage">

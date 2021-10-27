@@ -2,19 +2,17 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom'
 import './TicketsPage.css'
 import Add from '../../components/ui/icons/Add'
-import TicketCard from '../../components/ticket/TicketCard'
+/* import TicketCard from '../../components/ticket/TicketCard' */
 import ActiveTickets from '../../components/activeTickets/ActiveTickets';
 
-const TicketsPage = ({ isActive, setIsActive, isClicked, setIsClicked }) => {
+const TicketsPage = ({ isValid, setIsValid }) => {
      
 
     return (
          <div className="tickets-wrapper">
               <ActiveTickets
-               isActive={isActive}
-               setIsActive={setIsActive}
-               isClicked={isClicked}
-               setIsClicked={setIsClicked}
+               isValid={isValid}
+               setIsValid={setIsValid}
               />
          {/*  <section className='your-tickets'>
                    <h2 className="tickets-header">Dina biljetter</h2>
