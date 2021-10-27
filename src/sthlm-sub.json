@@ -5,7 +5,8 @@
       "properties": {
         "title": "Slussen",
         "adress": "Katarinavägen 2 A, 116 45 Stockholm",
-        "bookable": true
+        "bookable": true,
+        "id": 123
       },
       "geometry": {
         "coordinates": [18.07248804438448, 59.31951525682159],
@@ -17,7 +18,8 @@
       "properties": {
         "title": "Gamla Stan",
         "adress": "Munkbroleden 10, 111 28 Stockholm",
-        "bookable": true
+        "bookable": true,
+        "id": 1234
       },
       "geometry": {
         "coordinates": [18.06745918103826, 59.32316502594372],
@@ -29,7 +31,8 @@
       "properties": {
         "title": "Medborgarplatsen",
         "adress": "Katarina-Sofia, 116 21 Stockholm",
-        "bookable": true
+        "bookable": true,
+        "id": 12345
       },
       "geometry": {
         "coordinates": [18.073339016190776, 59.315091943601246],
@@ -41,7 +44,8 @@
       "properties": {
         "title": "Skanstull",
         "adress": "Götgatan 124, 118 62 Stockholm",
-        "bookable": true
+        "bookable": true,
+        "id": 123456
       },
       "geometry": {
         "coordinates": [18.075807988683835, 59.30808856970841],
@@ -53,7 +57,8 @@
       "properties": {
         "title": "Gullmarsplan",
         "adress": "Johanneshovsvägen 18, 121 18 Johanneshov",
-        "bookable": true
+        "bookable": true,
+        "id": 1234567
       },
       "geometry": {
         "coordinates": [18.080409120605218, 59.2989706613383],

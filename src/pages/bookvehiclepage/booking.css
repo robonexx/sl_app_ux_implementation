@@ -28,10 +28,10 @@
 
 .booking-info h2 {
     margin-bottom: 5px;
+    margin-left: 10px;
 }
 
-.booking-info p,
-.booking-info span {
+.booking-info p {
     margin-left: 10px;
 }
 

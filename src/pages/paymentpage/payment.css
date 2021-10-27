@@ -68,3 +68,9 @@
     font-family: 'slBold';
     font-size: 1.6rem;
   }
+
+  @media (max-width: 768px) {
+    .pay-wrapper {
+      width: 100%;
+    }
+  }
