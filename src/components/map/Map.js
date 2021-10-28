@@ -1,11 +1,13 @@
 import mapboxgl from 'mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import React, { useEffect, useRef, useState } from 'react';
 import './Map.css';
 
 
+// will try to redo the map just for fun at a later state and also try out directions
 
-mapboxgl.accessToken = 'pk.eyJ1IjoicnViYWR1YiIsImEiOiJja3U1ZXR2ajcwbHc5MnZvNTI0d2cwNGl2In0.7u6g9rRD0OoysTdKbeNb4Q';
-
+mapboxgl.accessToken =
+  'pk.eyJ1IjoicnViYWR1YiIsImEiOiJja3U1ZXR2ajcwbHc5MnZvNTI0d2cwNGl2In0.7u6g9rRD0OoysTdKbeNb4Q';
 
 const Map = () => {
   const mapContainerRef = useRef(null);
@@ -20,15 +22,14 @@ const Map = () => {
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [lng, lat],
       zoom: zoom,
+      pitch: 80,
+      bearing: 10,
     });
   }, []);
 
-   
   return (
     <div>
-      <div className="map-container" ref={mapContainerRef} />
-
-      
+      <div className='map-container' ref={mapContainerRef} />
     </div>
   );
 };
