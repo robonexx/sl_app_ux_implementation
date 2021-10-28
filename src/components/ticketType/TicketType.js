@@ -44,10 +44,7 @@ const TicketType = ({ ticketType, value }) => {
                     onClick={increment}>+</button>
                 </div>
             </section>
-            {/* <section className="confirm-section">
-                <h3>Att betala</h3>
-                <h3>{sum}kr</h3>
-            </section> */}
+           
         </>
     );
 }

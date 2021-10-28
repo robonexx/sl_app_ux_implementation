@@ -12,7 +12,7 @@
   width: 375px;
   height: 760px;
   overflow: hidden;
-  box-sizing: content-box !important;
+  box-sizing: border-box;
   background-color: var(--color-neutral-700);
 }
 

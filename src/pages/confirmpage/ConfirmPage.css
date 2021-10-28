@@ -116,6 +116,7 @@
 @media (max-width: 768px) {
   .confirm-wrapper {
     width: 100vw;
+    height: 100vh;
   }
 
   .confirm-header {
