@@ -64,7 +64,48 @@
         "coordinates": [18.080409120605218, 59.2989706613383],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hammarbysjöstad",
+        "adress": "Mårtensdalsgatan 2-8, 120 30 Stockholm",
+        "bookable": true,
+        "id": 567
+      },
+      "geometry": {
+        "coordinates": [18.089049429128288, 59.301083683214806],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mariatorget",
+        "adress": "Hornsgatan 31A, 118 49 Stockholm",
+        "bookable": true,
+        "id": 321
+      },
+      "geometry": {
+        "coordinates": [18.062933698648184, 59.318885946231575],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Stockholm Södra",
+        "adress": "Swedenborgsgatan 20, 118 27 Stockholm",
+        "bookable": true,
+        "id": 1234567
+      },
+      "geometry": {
+        "coordinates": [18.064289368567245, 59.314688122205425],
+        "type": "Point"
+      }
     }
   ],
   "type": "FeatureCollection"
 }
+
+ 

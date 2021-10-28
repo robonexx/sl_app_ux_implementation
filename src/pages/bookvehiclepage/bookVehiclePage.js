@@ -42,11 +42,14 @@ const BookVehicle = ({ text }) => {
   const [zoom, setZoom] = useState(14);
 
   useEffect(() => {
+    // settings for map
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [lng, lat],
       zoom: zoom,
+      pitch: 60,
+      bearing: -40,
     });
 
     // Render custom marker components

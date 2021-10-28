@@ -55,7 +55,15 @@ const BookBikeBtn = () => {
                     <ButtonToggle
                         key={type}
                         active={active === type}
-                        onClick={() => setActive(type)}
+                    onClick={() => {
+                      if (type === 'Scooter') {
+                        alert(`
+                        Funktion ej tillgänglig,
+                        väntat datum för SL scootrar
+                        1a maj 2022`)
+                      }
+                        setActive(type)
+                    }}
                     >
                         {type}
                     </ButtonToggle>
