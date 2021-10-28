@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './payment.css';
 import Swish from '../../components/ui/icons/Swish_Symbol_P3.png';
 
-const PaymentPage = () => {
+const PaymentPage = ({total}) => {
   const [isValid, setIsValid] = useState(false);
 
   console.log(isValid)
@@ -36,7 +36,7 @@ const PaymentPage = () => {
 
         <div className='pay-bottom-info'>
           <p className='dimmed'>Belopp</p>
-          <h1>38,00 SEK</h1>
+          <h1>{total} SEK</h1>
         </div>
 
        {/*  <Link

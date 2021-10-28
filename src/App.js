@@ -26,7 +26,7 @@ const appLoadVariants = {
   },
 };
 
-function App({ isValid, setIsValid }) {
+function App({ isValid, setIsValid, total, setTotal }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -54,11 +54,13 @@ function App({ isValid, setIsValid }) {
               <Route path='/ticketspage'>
                 <TicketsPage isValid={isValid} />
               </Route>
-              <Route path='/confirmpage' component={ConfirmPage} />
+                <Route path='/confirmpage'>
+                  <ConfirmPage total={total} setTotal={setTotal} />
+                </Route>
               <Route path='/showticket' component={ShowTicket} />
               <Route path='/bookvehicle' component={BookVehicle} />
               <Route path='/payment'>
-                <PaymentPage isValid={isValid} setIsValid={setIsValid} />
+                <PaymentPage isValid={isValid} setIsValid={setIsValid} total={total} />
               </Route>
               <Route path='/slcard' component={SlCard} />
             </Switch>

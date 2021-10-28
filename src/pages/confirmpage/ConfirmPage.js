@@ -5,29 +5,25 @@ import './ConfirmPage.css';
 import TotalSum from '../../components/ticketType/TotalSum'; */
 import LeftArrow from '../../components/ui/icons/LeftArrow';
 
-
 const ConfirmPage = () => {
+  const [count, setCount] = useState(0);
+  const [total, setTotal] = useState(0);
 
-  const [count, setCount] = useState(0)
-  const [total, setTotal] = useState(0)
-
- 
   const items = [
-        {
-            id: '1',
-            name: 'vuxen',
-            price: 38
-        },
-       /*  {
+    {
+      id: '1',
+      name: 'vuxen',
+      price: 38,
+    },
+    /*  {
             id: '2',
             name: 'rabatterat',
             price: 25
         } */
+  ];
 
-  ]
-  
-  const price = 38
-  
+  const price = items.map((item) => item.price);
+
   const increment = () => {
     setCount(count + 1);
     setTotal((count + 1) * price);
@@ -42,10 +38,13 @@ const ConfirmPage = () => {
     };
   }
 
-const ticketItems = items.map((el) => (
-  <div key={el.id}>
-    <section className='confirm-section'>
-      <h3>Antal {el.name}{/*  {el.price} */} </h3>
+  const ticketItems = items.map((el) => (
+    <div key={el.id}>
+      <section className='confirm-section'>
+        <h3>
+          Antal {el.name}
+          {/*  {el.price} */}{' '}
+        </h3>
         <div className='buttons'>
           <button className='btn btn-minus' onClick={() => setCount(decrement)}>
             -
@@ -56,11 +55,9 @@ const ticketItems = items.map((el) => (
           </button>
         </div>
       </section>
-  </div>
-  
-))
+    </div>
+  ));
 
-  
   return (
     <div className='confirm-wrapper'>
       <header className='confirm-header'>
@@ -94,12 +91,11 @@ const ticketItems = items.map((el) => (
           </button>
         </div>
       </section>
-     
+
       <section className='confirm-section'>
         <h3>Att betala</h3>
         <h3>{total} kr</h3>
       </section>
-     
 
       <Link to='/payment'>
         <button className='confirm-btn'>Fortsätt till betalning</button>
@@ -109,7 +105,6 @@ const ticketItems = items.map((el) => (
 };
 
 export default ConfirmPage;
-
 
 /* 
  const [count, setCount] = useState(0);
