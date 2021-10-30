@@ -33,9 +33,10 @@ z-index: 100;
     background-color: var(--color-neutral-800);
 }
 
-.travel-btns-wrapper >.bottom-container {
+.travel-btns-wrapper .bottom-container {
     position: absolute;
     height: 118px;
+    width: 100%;
     background-color: var(--color-neutral-700);
     overflow: hidden;
     padding: 0.25rem;
@@ -47,7 +48,7 @@ z-index: 100;
     padding-top: 15px;
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 40em) {
     .travel-btns-wrapper {
     width: 100vw;
   }
