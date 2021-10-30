@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 80px auto 0px;
+    margin: 40px auto 0px;
+    height: 100%;
 }
 
 .qrcode > img  {
@@ -11,12 +12,12 @@
 }
 
 .ticket-id {
-    margin-top:40px;
+    margin-top:20px;
     font-size: 1rem;
 }
 
 .ticket-time {
-    margin-top: 20px;
+    margin: 2rem auto;
     font-size:  2rem;
     font-weight: 600;
 }

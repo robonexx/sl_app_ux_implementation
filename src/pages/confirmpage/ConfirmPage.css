@@ -1,7 +1,7 @@
 .confirm-wrapper {
     margin: 0 auto;
     width: 375px;
-    height: 100%;
+    
     background-color: var(--color-neutral-700);
     color: var(--color-neutral-200);
     font-family: 'slRegular';
@@ -9,7 +9,7 @@
   }
 
   section {
-    padding: 20px 5px;
+    padding: 10px 5px;
  }
  
 
@@ -37,8 +37,8 @@
   }
   .confirm-header span {
     position: absolute;
-    top: 0.5rem;
     left: 0.5rem;
+    top: 0;
     transform: scale(1.2);
     
   }
@@ -75,10 +75,10 @@
       width: 42px;
       height: 42px;
       border: none;
-        border-radius: 5px;
-        background-color: var(--color-primary-400);
-        color: var(--color-neutral-100);  
-        cursor: pointer;
+      border-radius: 5px;
+      background-color: var(--color-primary-400);
+      color: var(--color-neutral-100);  
+      cursor: pointer;
   }
 
   .btn:hover {
@@ -92,9 +92,9 @@
 
   .confirm-btn {
     position: absolute;
-    bottom: 9vh;
-    left: 50%;
-    transform: translate(-50%);
+    bottom: 80px;
+
+    margin: 5%;
     text-align: center;
     width: 90%;
     height: 36px;
@@ -112,7 +112,7 @@
 }
   
 
-@media (max-width: 768px) {
+@media (max-width: 40em) {
   .confirm-wrapper {
     width: 100vw;
     height: 100vh;

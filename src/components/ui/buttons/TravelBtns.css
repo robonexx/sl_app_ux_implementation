@@ -2,7 +2,7 @@
 width: 375px;
 height: 178px;
 position: absolute;
-bottom: 8vh;
+bottom: 60px;
 z-index: 50;
 margin: 0;
 background: linear-gradient(to bottom, transparent 10%, var(--color-neutral-700) 90%);

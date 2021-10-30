@@ -3,21 +3,26 @@ import { Link } from 'react-router-dom';
 import './payment.css';
 import Swish from '../../components/ui/icons/Swish_Symbol_P3.png';
 
+const PaymentPage = () => {
+  const [tickets, setTickets] = useState();
 
+  let newTicket = {
+    id: 10,
+    type: 'vuxen',
+    price: 38,
+    total: 76,
+    date: '2021-09-21T14:28:06.419Z',
+    active: true,
+  };
+  const sendTicket = () => {
+    localStorage.setItem('tickets', JSON.stringify(newTicket));
 
-const PaymentPage = ({total}) => {
-  const [isValid, setIsValid] = useState(false);
-
-  console.log(isValid)
-  useEffect(() => {
-   window.localStorage.setItem('tickets', JSON.stringify)
-  })
+    // set data with sessionStorage
+    sessionStorage.setItem('mySessionStorageData', JSON.stringify(newTicket));
+  };
   /* 
   function handlePayment() {
    
-   
-      const uniqueid = () => {
-          const dateString = Date.now().toString(22)
       
     }
   }
@@ -33,23 +38,19 @@ const PaymentPage = ({total}) => {
         <p>Betala</p>
         <div className='pay-bottom-info'>
           <p className='dimmed'>Mottagare</p>
-          <h1>AB STORSTOCKHOLM LOKALTRAFIK</h1>
+          <h2>AB STORSTOCKHOLM LOKALTRAFIK</h2>
         </div>
 
         <div className='pay-bottom-info'>
           <p className='dimmed'>Belopp</p>
-          <h1>{total} SEK</h1>
+          <h2>38 SEK</h2>
         </div>
 
-       {/*  <Link
-          to='/ticketspage'
-          className='pay-btn'
-        > */}
-        <button
-          className='pay-btn'
-            onClick={() => setIsValid(true)}
-          >Betala</button>
-        {/* </Link> */}
+        <Link to='/ticketspage' className='pay-btn'>
+          <button /* className='pay-btn' */ onClick={() => sendTicket()}>
+            Betala
+          </button>
+        </Link>
 
         <Link to='/confirmpage'>
           <span>Avbryt</span>

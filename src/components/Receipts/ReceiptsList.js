@@ -26,7 +26,8 @@ export default function ReceiptList() {
             <li key={ticket.id}>
               <h3>Biljett typ: {ticket.type}</h3>
               <span>Pris: {ticket.price}</span>
-              <span>Bilj id:{ticket.date}</span>
+              <span>Bilj id: {ticket.id}</span>
+              <span>Datum: {ticket.date}</span>
             </li>
           ))}
       </ul>

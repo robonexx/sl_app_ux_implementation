@@ -1,33 +1,32 @@
-import React, {useState} from 'react';
-import './bookBikeBtn.css'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+
+import styled from 'styled-components';
 
 const BookBtn = styled.button`
-    width: 188px;
-    height: 42px;
-    border: none;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    color: #fff;
-    text-align: center;
-    /* background: #20252c; */
-    @media (max-width: 768px) {
+  width: 188px;
+  height: 42px;
+  border: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: #fff;
+  text-align: center;
+  /* background: #20252c; */
+  @media (max-width: 768px) {
     width: 50%;
   }
-`
+`;
 
 const BtnsWrapper = styled.div`
-    width: 375px;
-    height: 178px;
-    position: absolute;
-    bottom: 8vh;
-    z-index: 100;
+  width: 375px;
+  height: 178px;
+  position: absolute;
+  bottom: 60px;
+  z-index: 100;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 100vw;
   }
-
-`
+`;
 const ButtonToggle = styled(BookBtn)`
   background: #000000;
   ${({ active }) =>
@@ -37,42 +36,38 @@ const ButtonToggle = styled(BookBtn)`
   `}
 `;
 const BtnGroup = styled.div`
-    width: 100%;
-        display: flex;
-`
+  width: 100%;
+  display: flex;
+`;
 
 const types = ['Bike', 'Scooter'];
 
 const BookBikeBtn = () => {
-    const [active, setActive] = useState(types[0])
+  const [active, setActive] = useState(types[0]);
 
-    return (
-        
-        <BtnsWrapper >
-            <BtnGroup>
-                {types.map(type => (
-                   
-                    <ButtonToggle
-                        key={type}
-                        active={active === type}
-                    onClick={() => {
-                      if (type === 'Scooter') {
-                        alert(`
+  return (
+    <BtnsWrapper>
+      <BtnGroup>
+        {types.map((type) => (
+          <ButtonToggle
+            key={type}
+            active={active === type}
+            onClick={() => {
+              if (type === 'Scooter') {
+                alert(`
                         Funktion ej tillgänglig,
                         väntat datum för SL scootrar
-                        1a maj 2022`)
-                      }
-                        setActive(type)
-                    }}
-                    >
-                        {type}
-                    </ButtonToggle>
-               ))}
-            </BtnGroup>
-           
-            </BtnsWrapper>
-            
-     );
-}
- 
+                        1a maj 2022`);
+              }
+              setActive(type);
+            }}
+          >
+            {type}
+          </ButtonToggle>
+        ))}
+      </BtnGroup>
+    </BtnsWrapper>
+  );
+};
+
 export default BookBikeBtn;

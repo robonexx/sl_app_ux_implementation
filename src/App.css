@@ -16,7 +16,7 @@
   background-color: var(--color-neutral-700);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 40em) {
   .app-wrapper {
     width: 100vw;
     height: 100vh;

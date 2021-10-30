@@ -38,7 +38,6 @@ const Ticket = () => {
                     <QrCode text={`Giltig biljett ${new Date().toLocaleString() + ''}`}/>
                
             </div>
-            <h4>{new Date().toDateString()}</h4>
         </div>
         
      );

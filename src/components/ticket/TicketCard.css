@@ -35,7 +35,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 0 auto 1rem;
+    padding: 0 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,6 +46,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 50%;
+}
+
+.show-ticket .icons {
+    margin: 0 0.25rem;
 }
 
 .ticket-bottom span {
@@ -60,5 +64,5 @@ width: 50%;
 }
 
 .info-text {
-    margin: 1rem 0.5rem 1rem 0.5rem;
+   padding: 0.5rem 0;
 }
