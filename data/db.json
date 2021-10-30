@@ -1,0 +1,32 @@
+{
+    "tickets": [
+        {
+            "id": 1,
+            "type": "vuxen",
+            "price": 38,
+            "total": 38,
+            "date": "2021-10-21T13:28:06.419Z"
+        },
+        {
+            "id": 2,
+            "type": "vuxen",
+            "price": 38,
+            "total": 76,
+            "date": "2021-10-21T14:28:06.419Z"
+        },
+        {
+            "id": 3,
+            "type": "rabatterat",
+            "price": 25,
+            "total": 75,
+            "date": "2021-10-23T13:28:06.419Z"
+        },
+        {
+            "id": 4,
+            "type": "rabatterat",
+            "price": 25,
+            "total": 25,
+            "date": "2021-10-25T13:28:06.419Z"
+        }
+    ]
+}

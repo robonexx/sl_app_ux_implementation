@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './payment.css';
 import Swish from '../../components/ui/icons/Swish_Symbol_P3.png';
 
+
+
 const PaymentPage = ({total}) => {
   const [isValid, setIsValid] = useState(false);
 
@@ -10,9 +12,9 @@ const PaymentPage = ({total}) => {
   useEffect(() => {
    window.localStorage.setItem('tickets', JSON.stringify)
   })
-  
-  function handleClick(e) {
-    e.preventDefault()
+  /* 
+  function handlePayment() {
+   
    
       const uniqueid = () => {
           const dateString = Date.now().toString(22)
@@ -20,7 +22,7 @@ const PaymentPage = ({total}) => {
     }
   }
   
-
+ */
   return (
     <div className='pay-wrapper'>
       <div className='pay-top-section'>

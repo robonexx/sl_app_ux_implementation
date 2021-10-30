@@ -5,13 +5,13 @@ import Nav from './components/nav/Nav';
 import TicketsPage from './pages/ticketspage/TicketsPage';
 import ConfirmPage from './pages/confirmpage/ConfirmPage';
 import ShowTicket from './pages/showTicket/ShowTicket';
-import TravelMap from './pages/travelMap/TravelMap';
+import Homepage from './pages/Homepage/Homepage';
 import BookVehicle from './pages/bookvehiclepage/BookVehiclePage';
 import PaymentPage from './pages/paymentpage/PaymentPage';
 import { motion } from 'framer-motion';
-import Loading from './components/loading/Loading';
-
+import LoadingSl from './components/loading/LoadingSl';
 import SlCard from './components/slCard/SlCard';
+import ReceiptsPage from './pages/ReceiptsPage/ReceiptsPage';
 
 const appLoadVariants = {
   initial: {
@@ -40,7 +40,7 @@ function App({ isValid, setIsValid, total, setTotal }) {
       <div className='App'>
         {loading ? (
           <div className='app-wrapper'>
-            <Loading loading={loading} setLoading={setLoading} />
+            <LoadingSl loading={loading} setLoading={setLoading} />
           </div>
         ) : (
           <motion.div
@@ -50,7 +50,7 @@ function App({ isValid, setIsValid, total, setTotal }) {
             animate='visible'
           >
             <Switch>
-              <Route exact path='/' component={TravelMap} />
+              <Route exact path='/' component={Homepage} />
               <Route path='/ticketspage'>
                 <TicketsPage isValid={isValid} />
               </Route>
@@ -61,7 +61,8 @@ function App({ isValid, setIsValid, total, setTotal }) {
               <Route path='/bookvehicle' component={BookVehicle} />
               <Route path='/payment'>
                 <PaymentPage isValid={isValid} setIsValid={setIsValid} total={total} />
-              </Route>
+                </Route>
+                <Route path="/receipts" component={ReceiptsPage} />
               <Route path='/slcard' component={SlCard} />
             </Switch>
             <Nav />

@@ -1,0 +1,11 @@
+
+  .receipts-wrapper {
+    position: relative;
+    width: 375px;
+    height: 100%;
+    padding: 5px 5px;
+    background-color: var(--color-neutral-700);
+    color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }

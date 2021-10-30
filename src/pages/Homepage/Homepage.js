@@ -1,9 +1,9 @@
 import React from 'react';
 import Map from '../../components/map/Map';
 import TravelBtns from '../../components/ui/buttons/TravelBtns';
-import './TravelMap.css'
+import './Homepage.css'
 
-const TravelMap = () => {
+const Homepage = () => {
     return (
         <div className="map-wrapper">
              <Map />
@@ -13,4 +13,4 @@ const TravelMap = () => {
      );
 }
  
-export default TravelMap;
+export default Homepage;

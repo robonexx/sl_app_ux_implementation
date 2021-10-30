@@ -80,7 +80,7 @@ const ConfirmPage = () => {
       <div>{ticketItems}</div>
 
       <section className='confirm-section'>
-        <h3>Antal rabaterat</h3>
+        <h3>Antal rabatterat</h3>
         <div className='buttons'>
           <button className='btn btn-minus reduced' /* onClick={decrement} */>
             -

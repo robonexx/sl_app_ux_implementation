@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './TicketsPage.css';
 import Add from '../../components/ui/icons/Add';
 /* import TicketCard from '../../components/ticket/TicketCard' */
-import ActiveTickets from '../../components/activeTickets/ActiveTickets';
+import YourTickets from '../../components/YourTickets/YourTickets';
 
 const TicketsPage = ({ isValid, setIsValid }) => {
   return (
     <div className='tickets-wrapper'>
-      <ActiveTickets isValid={isValid} setIsValid={setIsValid} />
+      <YourTickets isValid={isValid} setIsValid={setIsValid} />
       {/*  <section className='your-tickets'>
                    <h2 className="tickets-header">Dina biljetter</h2>
                    {
@@ -49,9 +49,11 @@ const TicketsPage = ({ isValid, setIsValid }) => {
             <p>Se innehåll och köp biljetter till ditt SL-kort</p>
           </div>
         </Link>
+        <Link to='/receipts'>
         <div className='ticket-type'>
           <h3>Köphistorik och kvitton</h3>
         </div>
+        </Link>
         <div className='space ticket-type'>
           <h3>Lägg till nytt betalkort</h3>
           <Add className='icons add' />

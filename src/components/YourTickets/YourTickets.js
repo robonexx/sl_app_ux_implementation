@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import './style.css'
+import './YourTickets.css'
 import TicketCard from '../ticket/TicketCard'
 
-const ActiveTickets = ({ isValid, setIsValid }) => {
+const YourTickets = ({ isValid, setIsValid }) => {
   
 
  /*  const activeTicket = true */
@@ -24,4 +24,4 @@ const ActiveTickets = ({ isValid, setIsValid }) => {
   )
 }
 
-export default ActiveTickets
+export default YourTickets

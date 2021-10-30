@@ -2,12 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './TicketCard.css'
 import QrCodeIcon from '../ui/icons/QrCodeIcon';
-import Bike from '../ui/icons/Bike';
 import Timer from '../timer/Timer';
 
 const TicketCard = () => {
 
-    
 
     return (
         <div className="ticket-card">

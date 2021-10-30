@@ -6,6 +6,7 @@ import LeftArrow from '../ui/icons/LeftArrow';
 import './Ticket.css'
 
 const Ticket = () => {
+    
     return (
         <div className="ticket">
             <header className="ticket-header">
@@ -15,7 +16,7 @@ const Ticket = () => {
                 <h1>Biljetter</h1>
                 
                 <Link to="/ticketspage">
-                <span>stäng</span>
+                <span>Stäng</span>
                 </Link>
                
             </header>
