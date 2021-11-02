@@ -1,94 +1,77 @@
-# This is an implemantation of UX design in figma to an app. From group project => solo project
+# This is an school assignment done in react
 
-# to get this app to work you need to get your own API KEY from mapbox 
-# Or comment out the map on the app.js file
+The assignment started as a group project at KYH stockholms frontend education. 
+UX design process was to do user research, design, testing, and implementation.
+Then solo part was the implementation
 
-We started this project with groups with the assingment of how to make travels more environmentally friendly travels
-Also with the focus on eco friendly travelling.
+# The technologies I used
 
-Our first idea was an app with main functionality to gather different travel apps
+- I used vscode as my programming-editor https://code.visualstudio.com/
+- React-router-dom, https://reactrouter.com/web/guides/quick-start
+- framer-motion, https://www.framer.com/motion/
+- mapbox, https://www.mapbox.com/
+- css, (Cascading style sheets)
+- styled-components, https://styled-components.com/
+- localstorage https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+- and json-server https://newbedev.com/javascript-how-to-install-json-server-in-vscode-code-example
 
-After consulting with our teacher we had to change, and have in mind that all group members must be shure that they can 
-implement the prototype design in to an working app.
+# This is an implemantation of UX design in figma to an web app
 
-So we did and extension to SL Stockholms public transport
+The subject was sustainable travelling, and then trying to figure out an idea to a new app or an extension to
+an existing one.
+The goal, designing a simple prototype in Figma, one that everyone in the group could code later
 
-So the idea of adding bikes and scooters came to our minds and we designed and extensions to the actuall SL app
+# The idea 
 
-And this is my take with changes to get the design / prototype implementation to an app with the feedback with got
-to make changes as I go and try to get it working :D
+So our idea was a extension to Greater Stockholm local traffic, adding bikes and scooters to compete with other companies who deliver the same.
+Here you can see the prototype in figma...
+https://www.figma.com/proto/rPnOvgfPEs23B0CQ9S0yLM/Prototype-Main-Group-2-H%C3%A5llbart-Resande?node-id=77%3A53&starting-point-node-id=77%3A53
+
+# The work
+
+We started as a group helping eachother and then continued solo.
+This is my take on the app with changes we got from the prototype feedback.
+I also done my own test with this solo prototype and got some more feedback from the users
+Then after each feedback I tried to implement what I figured was needed
+
+# to try this out
+
+You can download the code and install the node packages, you need to get your own API key from mapbox thou
+Clear your localstorage to see all the information some will dissapear after first time usage
+
+Also if you want to check Receipts "köphistorik och kvitton" link/page you need to start a json-server on your editor
+On vs code
+ json-server --watch ./data/db.json starting on port 3000
+ then open up a  new terminal and npm start the project on 3001
+
+# Working and Clickable in the app (guide)
+
+- Firstpage - read and click away modal or
+in the navigator click tickets "biljetter"
+
+- on the tickets page you can click "Enkelbiljett"
+
+- On the confirm you ticketspage you can click on the adult "vuxen" counter and it will work (only choose on ticket thou)
+Then click pay
+
+- After You will be redirected and get a active ticket on the screen here you can
+check ticket or
+- Book a bike on the ticket
+
+- On the book bike / scooters ( scooters not working) 
+you can choose a bike, red means not available, green is available. choose the bike adress click book vehicle
+
+- Then its just a counter and an option to finnish
+
+THE END! (so far)
+
+Other clickable stuff with json server the receipt page
+Also a card on the sl ticket page
+
+# Well that about it
+
+If you want to contact me here is my email robertwagar@gmail.com
 
 
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
- rjw_fe20_imp_ux
 
