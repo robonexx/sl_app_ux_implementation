@@ -68,7 +68,7 @@ THE END! (so far)
 Other clickable stuff with json server the receipt page
 Also a card on the sl ticket page
 
-# Well that about it
+# Well thats about it
 
 If you want to contact me here is my email robertwagar@gmail.com
 
