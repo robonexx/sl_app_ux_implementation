@@ -8,7 +8,7 @@ import Homepage from './pages/Homepage/Homepage';
 import BookVehicle from './pages/Bookvehiclepage/BookVehiclePage';
 import PaymentPage from './pages/Paymentpage/PaymentPage';
 import BikeridePage from './pages/Bikeridepage/BikeridePage'
-
+import TheEnd from './pages/TheEnd/TheEnd';
 // extra stufff
 import LoadingSl from './components/Loading/LoadingSl';
 import SlCard from './components/slCard/SlCard';
@@ -74,6 +74,7 @@ function App({ isValid, setIsValid, total, setTotal }) {
               <Route path='/receipts' component={ReceiptsPage} />
               <Route path='/slcard' component={SlCard} />
               <Route path='/bikeridepage' component={BikeridePage} />
+              <Route path='/end' component={TheEnd} />
             </Switch>
             <Nav />
           </motion.div>
