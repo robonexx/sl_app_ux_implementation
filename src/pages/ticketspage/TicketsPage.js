@@ -6,6 +6,10 @@ import Add from '../../assets/icons/Add';
 import YourTickets from '../../components/YourTickets/YourTickets';
 
 const TicketsPage = ({ isValid, setIsValid }) => {
+  
+  const handleStorage = () => {
+    localStorage.setItem('hasVisitedBefore', true);
+  }
   return (
     <div className='tickets-wrapper'>
       <YourTickets isValid={isValid} setIsValid={setIsValid} />
@@ -25,8 +29,7 @@ const TicketsPage = ({ isValid, setIsValid }) => {
       <section className='buy-tickets'>
         <h2 className='tickets-header'>Köp ny biljett</h2>
         <div className='ticket-type'>
-          <Link className='links' to='/confirmpage'>
-            {' '}
+          <Link className='links' to='/confirmpage' onClick={handleStorage}>
             <h3 className='tickets-sub-header'>Enkelbiljett</h3>{' '}
           </Link>
           <p>Obegränsat antal resor inom 75 minuter</p>
@@ -50,9 +53,9 @@ const TicketsPage = ({ isValid, setIsValid }) => {
           </div>
         </Link>
         <Link to='/receipts'>
-        <div className='ticket-type'>
-          <h3>Köphistorik och kvitton</h3>
-        </div>
+          <div className='ticket-type'>
+            <h3>Köphistorik och kvitton</h3>
+          </div>
         </Link>
         <div className='space ticket-type'>
           <h3>Lägg till nytt betalkort</h3>

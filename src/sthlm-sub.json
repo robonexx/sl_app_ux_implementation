@@ -31,7 +31,7 @@
       "properties": {
         "title": "Medborgarplatsen",
         "adress": "Katarina-Sofia, 116 21 Stockholm",
-        "bookable": true,
+        "bookable": false,
         "id": 12345
       },
       "geometry": {

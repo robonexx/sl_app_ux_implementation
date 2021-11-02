@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
 import Nav from './components/nav/Nav';
 import TicketsPage from './pages/Ticketspage/TicketsPage';
 import ConfirmPage from './pages/Confirmpage/ConfirmPage';
@@ -8,10 +7,16 @@ import ShowTicket from './pages/showTicket/ShowTicket';
 import Homepage from './pages/Homepage/Homepage';
 import BookVehicle from './pages/Bookvehiclepage/BookVehiclePage';
 import PaymentPage from './pages/Paymentpage/PaymentPage';
-import { motion } from 'framer-motion';
+import BikeridePage from './pages/Bikeridepage/BikeridePage'
+
+// extra stufff
 import LoadingSl from './components/Loading/LoadingSl';
 import SlCard from './components/slCard/SlCard';
 import ReceiptsPage from './pages/ReceiptsPage/ReceiptsPage';
+
+// styling
+import './App.css';
+import { motion } from 'framer-motion';
 
 const appLoadVariants = {
   initial: {
@@ -68,6 +73,7 @@ function App({ isValid, setIsValid, total, setTotal }) {
               </Route>
               <Route path='/receipts' component={ReceiptsPage} />
               <Route path='/slcard' component={SlCard} />
+              <Route path='/bikeridepage' component={BikeridePage} />
             </Switch>
             <Nav />
           </motion.div>

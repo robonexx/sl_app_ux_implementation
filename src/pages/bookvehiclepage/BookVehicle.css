@@ -52,6 +52,7 @@
     background-color: var(--color-dark-blue);
 }
 
+
 .bike {
     fill: #000;
     width: 22px;
@@ -62,9 +63,40 @@
     fill: var(--color-neatural-500);
     cursor: pointer;
   }
-/* 
-  .not-bookable:hover {
-      fill: var(--color-error-dark);
-  } */
+
+
+  .modal-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: center;
+  }
+
+  
+.modal-info .bikes {
+    display: flex;
+    align-items: center;
+   
+}
+
+.available {
+    background-color: var(--color-success-light);
+    width: 22px;
+    height: 22px; 
+    border-radius: 50%;
+    margin-left: 0.25rem;
+    filter: drop-shadow(1px 1px rgba(0,0,0,0.3));
+}
+.not-available {
+    background-color: var(--color-error-light);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-left: 0.25rem; 
+    filter: drop-shadow(1px 1px rgba(0,0,0,0.3));
+}
+
+
 
 

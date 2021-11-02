@@ -1,0 +1,65 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.modal {
+    width: 367px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, .15);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25), inset 0 0 2px 0px white;
+    background: rgba(0, 0, 0, .0125);
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(3px);
+    z-index: 1000;
+    padding: 2rem;
+    line-height: 2rem;
+    border-radius: 1rem;
+}
+
+.modal button {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    background: var(--color-error-dark);
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    padding: 8px 14px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    margin: 1rem;
+}
+.modal button:hover {
+    background: var(--color-error-light);
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    padding: 8px 14px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+    margin: 1rem;
+}
+
+@media (max-width: 40em) {
+    .modal {
+        width: 100%;
+    }
+}

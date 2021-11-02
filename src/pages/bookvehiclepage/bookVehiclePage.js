@@ -6,56 +6,64 @@ import BookBikeBtn from '../../components/Buttons/BookBikeBtn';
 import ReactDOM from 'react-dom';
 import geoJson from '../../sthlm-sub.json';
 import Bike from '../../assets/icons/Bike';
-
+import Modal from '../../components/Modal/Modal';
 import './BookVehicle.css';
+
+const BookingInfo = () => (
+  <div className='modal-info'>
+    <h3>Choosing a bike</h3>
+    <p>Availabilty will be shown as</p>
+    <div className='bikes'>
+      <p>Available bike = </p>
+      <span className='available'></span>
+    </div>
+    <div className='bikes'>
+      <p>Unavailable bike = </p>
+      <span className='not-available'></span>
+    </div>
+    <p>When ready continue by booking the vehicle</p>
+  </div>
+);
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoicnViYWR1YiIsImEiOiJja3U1ZXR2ajcwbHc5MnZvNTI0d2cwNGl2In0.7u6g9rRD0OoysTdKbeNb4Q';
 
 const Marker = ({ onClick, children, feature }) => {
-
   const MouseEnter = (e) => {
     if (feature.properties.bookable === false) {
-      e.target.style.fill = 'tomato'
+      e.target.style.fill = 'var(--color-error-dark)';
     } else {
-      e.target.style.fill = '#1d9f64'
+      e.target.style.fill = 'var(--color-success-light)';
     }
-  }
+  };
 
   const MouseLeave = (e) => {
-    e.target.style.fill = ''
-  }
-  
-  
+    e.target.style.fill = '';
+  };
+
   const _onClick = () => {
-    
     if (feature.properties.bookable === false) {
-      
       let info = () => (
-        <div style={{color: 'tomato'}}>
+        <div style={{ color: 'tomato' }}>
           <div>Inga lediga cyklar:</div>
           <div> {feature.properties.adress}</div>
-          <div>
-            T-bana station: {feature.properties.title}
-          </div>
+          <div>T-bana station: {feature.properties.title}</div>
         </div>
-        );
-        onClick(info);
+      );
+      onClick(info);
     } else {
-     
       let info = () => (
-      <>
-        <div>Boka denna cykel på adress:</div>
-        <div> {feature.properties.adress}</div>
-        <div>
-          T-bana station: {feature.properties.title},
-          ID: {feature.properties.id}
-        </div>
-      </>
+        <>
+          <div>Boka denna cykel på adress:</div>
+          <div> {feature.properties.adress}</div>
+          <div>
+            T-bana station: {feature.properties.title}, ID:{' '}
+            {feature.properties.id}
+          </div>
+        </>
       );
       onClick(info);
     }
-   
   };
 
   return (
@@ -71,6 +79,12 @@ const BookVehicle = ({ text }) => {
   const [lng, setLng] = useState(18.07248804438448);
   const [lat, setLat] = useState(59.31951525682159);
   const [zoom, setZoom] = useState(14);
+
+  const [showModal, setShowModal] = useState(true);
+
+  const handleModal = () => {
+    setShowModal(false);
+  };
 
   useEffect(() => {
     // settings for map
@@ -121,7 +135,11 @@ const BookVehicle = ({ text }) => {
 
   return (
     <div className='map-wrapper'>
-      
+      {showModal && (
+        <Modal handleModal={handleModal}>
+          <BookingInfo />
+        </Modal>
+      )}
       <div className='map-container' ref={mapContainerRef} />
 
       <div className='booking-text'>
@@ -141,7 +159,7 @@ const BookVehicle = ({ text }) => {
           )}
         </div>
       </div>
-      <Link to='/bookBike'>
+      <Link to='/bikeridepage'>
         <button className='bookBike-btn'>Boka fordon</button>
       </Link>
     </div>
