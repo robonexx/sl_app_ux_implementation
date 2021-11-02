@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './TicketsPage.css';
-import Add from '../../components/ui/icons/Add';
+import Add from '../../assets/icons/Add';
 /* import TicketCard from '../../components/ticket/TicketCard' */
 import YourTickets from '../../components/YourTickets/YourTickets';
 

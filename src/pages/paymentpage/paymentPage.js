@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './payment.css';
-import Swish from '../../components/ui/icons/Swish_Symbol_P3.png';
+import Swish from '../../assets/icons/Swish_Symbol_P3.png';
 
 const PaymentPage = () => {
   const [tickets, setTickets] = useState();

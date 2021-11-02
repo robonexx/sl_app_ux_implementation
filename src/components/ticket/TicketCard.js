@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './TicketCard.css';
-import QrCodeIcon from '../ui/icons/QrCodeIcon';
+import QrCodeIcon from '../../assets/icons/QrCodeIcon';
 import Timer from '../timer/Timer';
 
 const TicketCard = () => {

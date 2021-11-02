@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './ConfirmPage.css';
 /* import TicketType from '../../components/ticketType/TicketType';
 import TotalSum from '../../components/ticketType/TotalSum'; */
-import LeftArrow from '../../components/ui/icons/LeftArrow';
+import LeftArrow from '../../assets/icons/LeftArrow';
 
 const ConfirmPage = () => {
   const [count, setCount] = useState(0);

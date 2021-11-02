@@ -1,7 +1,7 @@
 import React from 'react';
 import './TravelBtns.css'
-import AddFavorite from './AddFavorite';
-import SearchBar from './SearchBar';
+import AddFavorite from '../Buttons/AddFavorite';
+import SearchBar from '../Buttons/SearchBar';
 
 const TravelBtns = () => {
     return (

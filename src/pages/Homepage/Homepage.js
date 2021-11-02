@@ -1,6 +1,6 @@
 import React from 'react';
 import Map from '../../components/map/Map';
-import TravelBtns from '../../components/ui/buttons/TravelBtns';
+import TravelBtns from '../../components/TravelBtnsContainer';
 import './Homepage.css'
 
 const Homepage = () => {

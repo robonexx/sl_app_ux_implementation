@@ -1,11 +1,6 @@
 .booking-text {
     color: var(--color-neutral-100);
 }
-
-
-.bookBike-btn:hover {
-    background-color: var(--color-dark-blue);
-}
   
 
 .book-bottom-container {
@@ -23,7 +18,7 @@
 .booking-info {
     margin-top: 0.2rem;
     height: 100%;
-    padding: 1vh 1vw;
+    padding: 0.5rem 0.5rem;
 }
 
 .booking-info h2 {
@@ -39,9 +34,11 @@
     left: 50%;
     transform: translate(-50%);
     margin: 0.5rem auto;
+    font-family: 'slRegular', sans-serif;
+    font-size: 1.2rem;
     text-align: center;
     width: 90%;
-    height: 32px;
+    height: 46px;
     border: none;
     border-radius: 5px;
     background-color: var(--color-primary-400);
@@ -49,3 +46,25 @@
     cursor: pointer;
     z-index: 100;
 }
+
+
+.bookBike-btn:hover {
+    background-color: var(--color-dark-blue);
+}
+
+.bike {
+    fill: #000;
+    width: 22px;
+    height: 22px;
+  }
+  
+  .bike:hover {
+    fill: var(--color-neatural-500);
+    cursor: pointer;
+  }
+/* 
+  .not-bookable:hover {
+      fill: var(--color-error-dark);
+  } */
+
+

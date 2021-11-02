@@ -34,17 +34,7 @@
   border-radius: 50%;
 }
  */
-.icons.bike {
-  fill: #000;
-  width: 22px;
-  height: 22px;
-}
 
-.icons.bike:active,
-.icons.bike:hover {
-  fill: var(--color-success-dark);
-  cursor: pointer;
-}
 
 
 @media (max-width: 768px) {

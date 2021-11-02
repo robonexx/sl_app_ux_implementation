@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useFetch } from '../../hooks/useFetch';
-import Loading from '../loading/Loading';
+import Loading from '../Loading/Loading';
 
 // styles
 import './ReceiptsList.css';

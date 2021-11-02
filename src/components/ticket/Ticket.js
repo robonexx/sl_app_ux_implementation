@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import Timer from '../timer/Timer';
 import QrCode from '../qrcode/QrCode';
-import LeftArrow from '../ui/icons/LeftArrow';
+import LeftArrow from './../../assets/icons/LeftArrow';
 import './Ticket.css'
 
 const Ticket = () => {

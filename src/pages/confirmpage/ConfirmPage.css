@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 42px;
+    padding: 5px;
     width: 375px;
     border-bottom: 1px solid var(--color-neutral-300);
     font-family: 'slBold';
@@ -38,7 +38,7 @@
   .confirm-header span {
     position: absolute;
     left: 0.5rem;
-    top: 0;
+    top: 0.25rem;
     transform: scale(1.2);
     
   }
@@ -50,8 +50,9 @@
   .confirm-top-section {
       margin: 10px 20px;
      text-align: center;
-     background-color: rgba(0,0,0,0.5);
+     color: var(--color-neutral-400);
      border-radius: 10px;
+     
   }
 
   .confirm-section {
@@ -72,8 +73,8 @@
 
   .btn {
       margin: 0 5px;
-      width: 42px;
-      height: 42px;
+      width: 46px;
+      height: 46px;
       border: none;
       border-radius: 5px;
       background-color: var(--color-primary-400);
@@ -87,17 +88,20 @@
 
   .btn-minus,
   .btn-plus {
-      font-size: 20px;
+      font-weight: lighter;
+      font-size: 2rem;
   }
 
   .confirm-btn {
     position: absolute;
     bottom: 80px;
-
-    margin: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'slBold';
+    font-size: 1.2rem;
     text-align: center;
     width: 90%;
-    height: 36px;
+    height: 46px;
     border: none;
     border-radius: 5px;
     background-color: var(--color-primary-400);

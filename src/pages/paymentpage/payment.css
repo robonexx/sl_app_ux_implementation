@@ -69,10 +69,12 @@
     position: absolute;
     bottom: 90px;
     margin: 0 auto;
-    padding: 4px;
+    padding: 0.75rem;
+    font-family: 'slBold';
+    font-size: 1.2rem;
     text-align: center;
     width: 90%;
-    height: 36px;
+    height: 46px;
     border: none;
     border-radius: 5px;
     background-color: var(--color-primary-400);

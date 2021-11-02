@@ -2,33 +2,64 @@ import React, { useState, useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import { Link } from 'react-router-dom';
 /* import Map from '../../components/map/Map'; */
-import BookBikeBtn from '../../components/ui/buttons/BookBikeBtn';
+import BookBikeBtn from '../../components/Buttons/BookBikeBtn';
 import ReactDOM from 'react-dom';
 import geoJson from '../../sthlm-sub.json';
-import Bike from '../../components/ui/icons/Bike';
+import Bike from '../../assets/icons/Bike';
 
-import './booking.css';
+import './BookVehicle.css';
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoicnViYWR1YiIsImEiOiJja3U1ZXR2ajcwbHc5MnZvNTI0d2cwNGl2In0.7u6g9rRD0OoysTdKbeNb4Q';
 
 const Marker = ({ onClick, children, feature }) => {
-  const _onClick = (e) => {
-    let info = () => (
+
+  const MouseEnter = (e) => {
+    if (feature.properties.bookable === false) {
+      e.target.style.fill = 'tomato'
+    } else {
+      e.target.style.fill = '#1d9f64'
+    }
+  }
+
+  const MouseLeave = (e) => {
+    e.target.style.fill = ''
+  }
+  
+  
+  const _onClick = () => {
+    
+    if (feature.properties.bookable === false) {
+      
+      let info = () => (
+        <div style={{color: 'tomato'}}>
+          <div>Inga lediga cyklar:</div>
+          <div> {feature.properties.adress}</div>
+          <div>
+            T-bana station: {feature.properties.title}
+          </div>
+        </div>
+        );
+        onClick(info);
+    } else {
+     
+      let info = () => (
       <>
         <div>Boka denna cykel på adress:</div>
         <div> {feature.properties.adress}</div>
         <div>
-          T-bana station: {feature.properties.title}, ID:{' '}
-          {feature.properties.id}
+          T-bana station: {feature.properties.title},
+          ID: {feature.properties.id}
         </div>
       </>
-    );
-    onClick(info);
+      );
+      onClick(info);
+    }
+   
   };
 
   return (
-    <div onClick={_onClick}>
+    <div onClick={_onClick} onMouseOver={MouseEnter} onMouseOut={MouseLeave}>
       <Bike>{children}</Bike>
     </div>
   );
@@ -90,7 +121,7 @@ const BookVehicle = ({ text }) => {
 
   return (
     <div className='map-wrapper'>
-      {/* <Map onClick={markerClicked}/> */}
+      
       <div className='map-container' ref={mapContainerRef} />
 
       <div className='booking-text'>
@@ -101,7 +132,6 @@ const BookVehicle = ({ text }) => {
           {textInfo !== '' ? (
             <div>
               <h2>{textInfo}</h2>
-              {/* <p>Lås upp cykeln med Qr koden på din biljett</p> */}
             </div>
           ) : (
             <div>

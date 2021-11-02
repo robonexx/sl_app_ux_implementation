@@ -17,15 +17,15 @@ body {
 }
 @font-face {
   font-family: 'slRegular';
-  src: url('./components/ui/fonts/slRegular.woff2') format('woff2');
+  src: url('./assets/fonts/slRegular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'slBold';
-  src: url('./components/ui/fonts/slBold.woff2') format('woff2');
+  src: url('./assets/fonts/slBold.woff2') format('woff2');
 }
 @font-face {
   font-family: 'slCool';
-  src: url('./components/ui/fonts/slCool.woff2') format('woff2');
+  src: url('./assets/fonts/slCool.woff2') format('woff2');
 }
 
 :root {

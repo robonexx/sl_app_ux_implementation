@@ -1,9 +1,9 @@
 import React from 'react';
 import './nav.css'
 import { Link } from 'react-router-dom'
-import Journey from '../ui/icons/Journey'
-import Tickets from '../ui/icons/Tickets'
-import More from '../ui/icons/More'
+import Journey from '../../assets/icons/Journey'
+import Tickets from '../../assets/icons/Tickets'
+import More from '../../assets/icons/More'
 
 const Nav = () => {
     return (

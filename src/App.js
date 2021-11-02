@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Nav from './components/nav/Nav';
-import TicketsPage from './pages/ticketspage/TicketsPage';
-import ConfirmPage from './pages/confirmpage/ConfirmPage';
+import TicketsPage from './pages/Ticketspage/TicketsPage';
+import ConfirmPage from './pages/Confirmpage/ConfirmPage';
 import ShowTicket from './pages/showTicket/ShowTicket';
 import Homepage from './pages/Homepage/Homepage';
-import BookVehicle from './pages/bookvehiclepage/BookVehiclePage';
-import PaymentPage from './pages/paymentpage/PaymentPage';
+import BookVehicle from './pages/Bookvehiclepage/BookVehiclePage';
+import PaymentPage from './pages/Paymentpage/PaymentPage';
 import { motion } from 'framer-motion';
-import LoadingSl from './components/loading/LoadingSl';
+import LoadingSl from './components/Loading/LoadingSl';
 import SlCard from './components/slCard/SlCard';
 import ReceiptsPage from './pages/ReceiptsPage/ReceiptsPage';
 
@@ -54,15 +54,19 @@ function App({ isValid, setIsValid, total, setTotal }) {
               <Route path='/ticketspage'>
                 <TicketsPage isValid={isValid} />
               </Route>
-                <Route path='/confirmpage'>
-                  <ConfirmPage total={total} setTotal={setTotal} />
-                </Route>
+              <Route path='/confirmpage'>
+                <ConfirmPage total={total} setTotal={setTotal} />
+              </Route>
               <Route path='/showticket' component={ShowTicket} />
               <Route path='/bookvehicle' component={BookVehicle} />
               <Route path='/payment'>
-                <PaymentPage isValid={isValid} setIsValid={setIsValid} total={total} />
-                </Route>
-                <Route path="/receipts" component={ReceiptsPage} />
+                <PaymentPage
+                  isValid={isValid}
+                  setIsValid={setIsValid}
+                  total={total}
+                />
+              </Route>
+              <Route path='/receipts' component={ReceiptsPage} />
               <Route path='/slcard' component={SlCard} />
             </Switch>
             <Nav />

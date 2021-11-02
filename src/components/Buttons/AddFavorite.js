@@ -1,6 +1,6 @@
 import React from 'react';
 import './AddFavorite.css'
-import Add from '../icons/Add';
+import Add from '../../assets/icons/Add';
 
 const AddFavorite = () => {
     return (

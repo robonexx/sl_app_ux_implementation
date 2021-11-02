@@ -70,7 +70,7 @@
       "properties": {
         "title": "Hammarbysjöstad",
         "adress": "Mårtensdalsgatan 2-8, 120 30 Stockholm",
-        "bookable": true,
+        "bookable": false,
         "id": 567
       },
       "geometry": {
@@ -96,7 +96,7 @@
       "properties": {
         "title": "Stockholm Södra",
         "adress": "Swedenborgsgatan 20, 118 27 Stockholm",
-        "bookable": true,
+        "bookable": false,
         "id": 1234567
       },
       "geometry": {
