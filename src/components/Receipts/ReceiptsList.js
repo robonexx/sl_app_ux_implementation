@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useFetch } from '../../hooks/useFetch';
 import Loading from '../Loading/Loading';
 
@@ -6,7 +6,7 @@ import Loading from '../Loading/Loading';
 import './ReceiptsList.css';
 
 export default function ReceiptList() {
-  const [url, setUrl] = useState('http://localhost:3000/tickets');
+  const [url, setUrl] = useState('http://localhost:8000/tickets');
   const { data: tickets, isLoading, error } = useFetch(url);
 
   return (
@@ -34,18 +34,18 @@ export default function ReceiptList() {
 
       <div className='filters'>
         <button
-          onClick={() => setUrl('http://localhost:3000/tickets?type=vuxen')}
+          onClick={() => setUrl('http://localhost:8000/tickets?type=vuxen')}
         >
           Biljetter vuxen
         </button>
         <button
           onClick={() =>
-            setUrl('http://localhost:3000/tickets?type=rabatterat')
+            setUrl('http://localhost:8000/tickets?type=rabatterat')
           }
         >
           Biljetter rabatterat
         </button>
-        <button onClick={() => setUrl('http://localhost:3000/tickets')}>
+        <button onClick={() => setUrl('http://localhost:8000/tickets')}>
           Alla biljetter
         </button>
       </div>
