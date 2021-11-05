@@ -1,45 +1,85 @@
-# This is an school assignment done in react
+# __SL APP / BIKES__  _(& SCOOTERS )_
 
-The assignment started as a group project at KYH stockholms frontend education. 
-UX design process was to do user research, design, testing, and implementation.
-Then solo part was the implementation
+<img src="readme/start.jpg" alt="Project image" width="150">
 
-# The technologies I used
 
-- I used vscode as my programming-editor https://code.visualstudio.com/
-- React-router-dom, https://reactrouter.com/web/guides/quick-start
-- framer-motion, https://www.framer.com/motion/
-- mapbox, https://www.mapbox.com/
-- css, (Cascading style sheets)
-- styled-components, https://styled-components.com/
-- localstorage https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-- and json-server https://newbedev.com/javascript-how-to-install-json-server-in-vscode-code-example
 
-# This is an implemantation of UX design in figma to an web app
+----
+</br>
 
-The subject was sustainable travelling, and then trying to figure out an idea to a new app or an extension to
-an existing one.
-The goal, designing a simple prototype in Figma, one that everyone in the group could code later
+#  __Description:__
+
+This project is an school assignment at KYH Stockholm frontend education. 
+The goal was to create a prototype (mvp) in groups and then implement the UX design as a solo project.
+You could choose which ever way you wanted to implement the design, with or without a frameworks.
+
+
+</br>
+
+
+---
+</br>
+
+# __Languages and Tools:__
+[<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />][vscode]
+[<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />][react-js]
+[<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />][html]
+[<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />][css]
+[<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />][javascript]
+</br>
+
+- [react-router-dom]
+- [mapbox]  
+- [framer-motion]
+- [styled-components]
+- [json-server]
+- ☕
+
+</br>
+
+---
+</br>
+
+##  __Preview__
+
+
+<img src="readme/firstpage.jpg" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="readme/ticketspage.jpg" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="readme/confirming_tickets.jpg" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="readme/payment.jpg" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="readme/validticket.jpg" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="readme/choose_a_vechicle.jpg" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="readme/ongoing_ride.jpg" alt="Project image" width="150"> &nbsp; &nbsp;
+
+</br>
+
+---
+</br>
+
 
 # The idea 
 
 So our idea was a extension to Greater Stockholm local traffic, adding bikes and scooters to compete with other companies who deliver the same.
-Here you can see the prototype in figma...
+Also the subject was sustainable travel, so either do a new idea to an app or work on an existing one.
+Here you can see the prototype the group did in figma...
 https://www.figma.com/proto/rPnOvgfPEs23B0CQ9S0yLM/Prototype-Main-Group-2-H%C3%A5llbart-Resande?node-id=77%3A53&starting-point-node-id=77%3A53
 
 # The work
 
-We started as a group helping eachother and then continued solo.
-This is my take on the app with changes we got from the prototype feedback.
-I also done my own test with this solo prototype and got some more feedback from the users
-Then after each feedback I tried to implement what I figured was needed
+My own work I started with the feedback, change all the info we gathered as group but also the feedback I gathered when diong my own testing, some people tried out my work in progress, after that I started to work on making it look more like tha actuall app. 
+Then I got some feedback on the buttons and icons so I tried to change them a bit.
+The icons we found on SL´s figma page, also the sizes to styling and fonts
 
-# to try this out
 
-You can download the code and install the node packages, you need to get your own API key from mapbox thou
-Clear your localstorage to see all the information some will dissapear after first time usage
+# __To try this out__
 
-Also if you want to check Receipts "köphistorik och kvitton" link/page you need to start a json-server on your editor
+You can download or clone the code and install the node packages
+Get your own API key from mapbox
+Clear your localstorage to see all the information (some will dissapear after first time usage)
+
+Also if you want to check Receipts "köphistorik och kvitton" link/page 
+- Start a json-server
+json-server --watch ./data/db.json --port 8000
 On vs code
  json-server --watch ./data/db.json starting on port 3000
  then open up a  new terminal and npm start the project on 3001
@@ -63,14 +103,50 @@ you can choose a bike, red means not available, green is available. choose the b
 
 - Then its just a counter and an option to finnish
 
-THE END! (so far)
 
 Other clickable stuff with json server the receipt page
 Also a card on the sl ticket page
 
-# Well thats about it
+## Well thats about it...
+</br>
+---
+</br>
 
-If you want to contact me here is my email robertwagar@gmail.com
+# __THE END!__
+
+
+## __My Socials__
+
+- Github - [robonexx](https://github.com/robonexx)
+- Instagram - [r.o.b_o.n.e](https://www.instagram.com/r.o.b_o.n.e/)
+- Linkedin - [Robert Wägar](https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/)
+- Portfolio - "In the works"
+
+</br>
+
+--- 
+</br>
+
+## __Email__
+- roberwagar@gmail.com
+
+</br>
+---
+</br>
+
+
+[vscode]: https://code.visualstudio.com/
+[react-js]: https://reactjs.org/ 
+[javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[react-router-dom]: https://reactrouter.com/web/guides/quick-start
+[framer-motion]: https://www.framer.com/motion/
+[mapbox]: https://www.mapbox.com/
+[html]: https://www.w3schools.com/html/
+[css]: https://www.w3.org/Style/CSS/Overview.en.html
+[styled-components]: https://styled-components.com/
+[localstorage]: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+[json-server]: https://newbedev.com/javascript-how-to-install-json-server-in-vscode-code-example
+
 
 
 
