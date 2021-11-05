@@ -1,6 +1,6 @@
 # __SL APP / BIKES__  _(& SCOOTERS )_
 
-<img src="readme/start.jpg" alt="Project image" width="150">
+<img src="readme/preview.gif" alt="Project image" width="150">
 
 
 
