@@ -128,7 +128,7 @@ Also a card on the sl ticket page
 </br>
 
 ## __Email__
-- roberwagar@gmail.com
+- robertwagar@gmail.com
 
 </br>
 ---
