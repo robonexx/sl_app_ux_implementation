@@ -34,6 +34,8 @@ const appLoadVariants = {
 function App({ isValid, setIsValid, total, setTotal }) {
   const [loading, setLoading] = useState(true);
 
+  console.log('If you get messages in the console saying true, clear your localstorage')
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);

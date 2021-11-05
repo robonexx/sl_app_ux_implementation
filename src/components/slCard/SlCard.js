@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react';
+import React from 'react';
 import './slcard.css';
 import Img from '../../assets/images/sl.png';
 
@@ -8,9 +8,6 @@ const SlCard = () => {
     <div className='card-wrapper'>
       <div className='cardContent'>
         <img src={Img} alt='' />
-        {/* <h2 className="cardTitle">SL KORT</h2>
-            <h3 className="cardSubtitle">GILTIG 30 DAGAR</h3>
-            <p className="cardArea">STOCKHOLMS LOKALTRAFIK</p> */}
       </div>
     </div>
   );

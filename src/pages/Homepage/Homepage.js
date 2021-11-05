@@ -14,7 +14,8 @@ const Info = () => (
         </p>
         <a style={{
             color: 'var(--color-highlight-light', textShadow: '2px 2px 3px rgba(0,0,0,0.5)'
-        }} href="https://github.com/robonexx/rjw_fe20_imp_ux#readme"
+    }} href="https://github.com/robonexx/rjw_fe20_imp_ux#readme"
+    rel="noreferrer"
         target="_blank">Read more...</a>
 
     <h3>Don't forget your helmet! Let's ride...</h3>

@@ -1,8 +1,7 @@
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Map.css';
-
 
 // will try to redo the map just for fun at a later state and also try out directions
 
@@ -11,21 +10,21 @@ mapboxgl.accessToken =
 
 const Map = () => {
   const mapContainerRef = useRef(null);
-  const [lng, setLng] = useState(18.07248804438448);
-  const [lat, setLat] = useState(59.31951525682159);
-  const [zoom, setZoom] = useState(14);
 
   // Initialize map when component mounts
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/streets-v11',
-      center: [lng, lat],
-      zoom: zoom,
+      center: [18.07248804438448, 59.31951525682159],
+      zoom: 14,
       pitch: 80,
       bearing: 10,
     });
+    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
   }, []);
+
+ 
 
   return (
     <div>

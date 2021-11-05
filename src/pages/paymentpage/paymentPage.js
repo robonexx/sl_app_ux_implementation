@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './payment.css';
 import Swish from '../../assets/icons/Swish_Symbol_P3.png';
 
 const PaymentPage = () => {
-  const [tickets, setTickets] = useState();
-
   let newTicket = {
     id: 10,
     type: 'vuxen',
@@ -31,7 +29,7 @@ const PaymentPage = () => {
   return (
     <div className='pay-wrapper'>
       <div className='pay-top-section'>
-        <img src={Swish}></img>
+        <img src={Swish} alt='swish'></img>
       </div>
 
       <div className='pay-bottom-section'>

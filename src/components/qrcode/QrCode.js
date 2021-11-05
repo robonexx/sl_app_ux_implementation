@@ -9,7 +9,7 @@ const QrCode = ({ text }) => {
     QRCode.toDataURL(text).then((data) => {
       setQrSrc(data);
     });
-  }, []);
+  }, [text]);
 
   return (
     <div className='qrcode'>

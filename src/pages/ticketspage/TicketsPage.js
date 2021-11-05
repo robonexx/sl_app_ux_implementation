@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './TicketsPage.css';
 import Add from '../../assets/icons/Add';
@@ -6,13 +6,15 @@ import Add from '../../assets/icons/Add';
 import YourTickets from '../../components/YourTickets/YourTickets';
 
 const TicketsPage = ({ isValid, setIsValid }) => {
-  
   const handleStorage = () => {
     localStorage.setItem('hasVisitedBefore', true);
-  }
+  };
   return (
     <div className='tickets-wrapper'>
       <YourTickets isValid={isValid} setIsValid={setIsValid} />
+
+      {/* This section you will find in components Yourtickets
+      Im planning on doing all these sections to components later */}
       {/*  <section className='your-tickets'>
                    <h2 className="tickets-header">Dina biljetter</h2>
                    {

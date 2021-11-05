@@ -64,7 +64,7 @@ const YourTickets = () => {
     }
 
     console.log(isValid);
-  }, []);
+  }, [isValid]);
 
   /*  const activeTicket = true */
   return (
