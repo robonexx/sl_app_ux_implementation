@@ -6,9 +6,9 @@ export default function Modal({ children, handleModal }) {
     return ReactDom.createPortal((
         <div className="modal-backdrop">
             <div className="modal">
-                {children}
                 <button
-                onClick={handleModal}>X</button>
+                    onClick={handleModal}>X</button>
+                {children}
             </div>
             
         </div>
