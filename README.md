@@ -120,7 +120,7 @@ will give the right flow on this prototype/ project
 
 - Then its just a counter and an option to finnish
 
-- When clicking the "Tack och hej
+- When clicking the "Tack och hej" the localstorage will be cleared
 
 Other clickable stuff with json server the receipt page
 Also a card on the sl ticket page

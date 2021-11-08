@@ -47,15 +47,15 @@
     height: 46px;
     border: none;
     border-radius: 5px;
-    background-color: var(--color-highlight-light);
-    color: var(--color-neutral-800);  
+    background-color: var(--color-highlight-dark);
+    color: var(--color-primary-400);  
     cursor: pointer;
     z-index: 100;
 }
 
 
 .end-btn:hover {
-    background-color: var(--color-highlight-dark);
+    background-color: var(--color-highlight-light);
     font-size: 1.4rem;
     color: var(--color-primary-400);
 }
