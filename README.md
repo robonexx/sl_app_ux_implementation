@@ -19,16 +19,6 @@ You could choose which ever way you wanted to implement the design, with or with
 
 ---
 </br>
-#  __Responsivness:__
-
-This project responsive in desktop/laptop, on Chrome and firefox, somewhat responsive on some devices using safari
-
-
-</br>
-
-
----
-</br>
 
 # __Languages and Tools:__
 [<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />][vscode]
@@ -69,30 +59,42 @@ This project responsive in desktop/laptop, on Chrome and firefox, somewhat respo
 
 # The idea 
 
-So our idea was a extension to Greater Stockholm local traffic, adding bikes and scooters to compete with other companies who deliver the same.
+So our idea was a extension to greater Stockholm local traffic, adding bikes and scooters to compete with other companies who deliver the same option.
 Also the subject was sustainable travel, so either do a new idea to an app or work on an existing one.
 Here you can see the prototype the group did in figma...
 https://www.figma.com/proto/rPnOvgfPEs23B0CQ9S0yLM/Prototype-Main-Group-2-H%C3%A5llbart-Resande?node-id=77%3A53&starting-point-node-id=77%3A53
 
+</br>
+
 # The work
 
-My own work I started with the feedback, change all the info we gathered as group but also the feedback I gathered when diong my own testing, some people tried out my work in progress, after that I started to work on making it look more like tha actuall app. 
+My own work I started with the feedback, change all the info we gathered as group but also the feedback I gathered when doing my own testing, some people tried out my webpage in progress, after that I started to work on making it look more like tha actual app. 
 Then I got some feedback on the buttons and icons so I tried to change them a bit.
-The icons we found on SL´s figma page, also the sizes to styling and fonts
+The icons we found on SL´s figma page, also the sizes to styling and fonts.
 
+</br>
+
+---
 
 # __To try this out__
+
+(works best on chrome, firefox and samsung mobiles)
 
 You can download or clone the code and install the node packages
 Get your own API key from mapbox
 Clear your localstorage to see all the information (some will dissapear after first time usage)
+(does not work on edge or one plus phones)
 
 Also if you want to check Receipts "köphistorik och kvitton" link/page 
 - Start a json-server
+(In vs code)
 json-server --watch ./data/db.json --port 8000
-On vs code
- json-server --watch ./data/db.json starting on port 3000
- then open up a  new terminal and npm start the project on 3001
+
+ then open up a  new terminal and npm start the project on 3000
+
+ </br>
+ 
+ ---
 
 # Working and Clickable in the app (guide)
 
@@ -110,16 +112,35 @@ check ticket or
 
 - On the book bike / scooters ( scooters not working) 
 you can choose a bike, red means not available, green is available. choose the bike adress click book vehicle
+Try out medborgarplatsen to see not available, choosing the on:
+Katarinavägen 2 A, 116 45 Stockholm,
+T-bana: Slussen 
+
+will give the right flow on this prototype/ project
 
 - Then its just a counter and an option to finnish
-
 
 Other clickable stuff with json server the receipt page
 Also a card on the sl ticket page
 
-## Well thats about it...
 </br>
+
 ---
+
+# Issues
+
+- Button in modal dissapering in safari (sometimes)
+- Localstorage not working on One plus mobile phones or edge
+- Mapbox Not always rendering properly I had a lot of issues with mapbox
+- it did not show up on surge when uploading the project
+- had to use older version of react to get it to work
+- some issues with renders and such
+
+
+</br>
+
+---
+
 </br>
 
 # __THE END!__
