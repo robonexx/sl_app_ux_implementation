@@ -101,7 +101,7 @@ json-server --watch ./data/db.json --port 8000
 - Firstpage - read and click away modal or
 in the navigator click tickets "biljetter"
 
-- on the tickets page you can click "Enkelbiljett"
+- On the tickets page you can click "Enkelbiljett"
 
 - On the confirm you ticketspage you can click on the adult "vuxen" counter and it will work (only choose on ticket thou)
 Then click pay
@@ -120,6 +120,8 @@ will give the right flow on this prototype/ project
 
 - Then its just a counter and an option to finnish
 
+- When clicking the "Tack och hej
+
 Other clickable stuff with json server the receipt page
 Also a card on the sl ticket page
 
@@ -129,13 +131,14 @@ Also a card on the sl ticket page
 
 # Issues
 
+- Local storage not always getting the info after the payments page, a ticket should show up, if it dont re-try
 - Button in modal dissapering in safari (sometimes)
 - Localstorage not working on One plus mobile phones or edge
 - Mapbox Not always rendering properly I had a lot of issues with mapbox
 - it did not show up on surge when uploading the project
 - had to use older version of react to get it to work
 - some issues with renders and such
-
+- icons using fill in  the svg to target color targets wrong paths (easy fix would be using react-icons instead)
 
 </br>
 

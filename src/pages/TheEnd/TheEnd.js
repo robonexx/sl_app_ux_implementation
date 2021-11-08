@@ -17,7 +17,7 @@ const TheEnd = () => {
       </div>
       <Link to='/'>
         <button className='end-btn' onClick={clearAll}>
-          Tack och hej!
+          Återställ & avsluta
         </button>
       </Link>
     </div>
