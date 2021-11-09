@@ -7,7 +7,7 @@ const SlCard = () => {
   return (
     <div className='card-wrapper'>
       <div className='cardContent'>
-        <img src={Img} alt='' />
+        <img src={Img} alt='sl icon' />
       </div>
     </div>
   );

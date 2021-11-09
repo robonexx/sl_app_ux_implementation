@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './TicketsPage.css';
 import Add from '../../assets/icons/Add';
-/* import TicketCard from '../../components/ticket/TicketCard' */
 import YourTickets from '../../components/YourTickets/YourTickets';
+
+/* import TicketCard from '../../components/ticket/TicketCard' */
 
 const TicketsPage = ({ isValid, setIsValid }) => {
   const handleStorage = () => {

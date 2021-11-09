@@ -10,15 +10,33 @@
 #  __Description:__
 
 This project is an school assignment at KYH Stockholm frontend education. 
-The goal was to create a prototype (mvp) in groups and then implement the UX design as a solo project.
+The goal was to create a prototype (mvp) in groups using Figma or Adobe XD and then implement the UX design as a solo project to a working application / website.
 You could choose which ever way you wanted to implement the design, with or without a frameworks.
-
 
 </br>
 
 
 ---
 </br>
+
+# The idea 
+
+So our idea was an extension to Stockholm Public Transport adding bikes and scooters to compete with other companies who deliver the same options.
+Also the subject was sustainable travel, so either do a new idea to an app or work on an existing one. We choose an existing one.
+Here you can see the prototype the group did in figma...
+https://www.figma.com/proto/rPnOvgfPEs23B0CQ9S0yLM/Prototype-Main-Group-2-H%C3%A5llbart-Resande?node-id=77%3A53&starting-point-node-id=77%3A53
+
+</br>
+
+# The work
+
+My own work I started with the feedback, change all the info we gathered as group but also the feedback I gathered when doing my own testing, some people tried out my webpage in progress, after that I started to work on making it look more like tha actual app. 
+Then I got some feedback on the buttons and icons so I tried to change them a bit.
+The icons we found on SL´s figma page, also the sizes to styling and fonts.
+
+</br>
+
+---
 
 # __Languages and Tools:__
 [<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />][vscode]
@@ -56,25 +74,6 @@ You could choose which ever way you wanted to implement the design, with or with
 ---
 </br>
 
-
-# The idea 
-
-So our idea was a extension to greater Stockholm local traffic, adding bikes and scooters to compete with other companies who deliver the same option.
-Also the subject was sustainable travel, so either do a new idea to an app or work on an existing one.
-Here you can see the prototype the group did in figma...
-https://www.figma.com/proto/rPnOvgfPEs23B0CQ9S0yLM/Prototype-Main-Group-2-H%C3%A5llbart-Resande?node-id=77%3A53&starting-point-node-id=77%3A53
-
-</br>
-
-# The work
-
-My own work I started with the feedback, change all the info we gathered as group but also the feedback I gathered when doing my own testing, some people tried out my webpage in progress, after that I started to work on making it look more like tha actual app. 
-Then I got some feedback on the buttons and icons so I tried to change them a bit.
-The icons we found on SL´s figma page, also the sizes to styling and fonts.
-
-</br>
-
----
 
 # __To try this out__
 
