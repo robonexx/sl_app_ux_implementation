@@ -30,9 +30,17 @@ https://www.figma.com/proto/rPnOvgfPEs23B0CQ9S0yLM/Prototype-Main-Group-2-H%C3%A
 
 # The work
 
-My own work I started with the feedback, change all the info we gathered as group but also the feedback I gathered when doing my own testing, some people tried out my webpage in progress, after that I started to work on making it look more like tha actual app. 
+My own work I started with the feedback, and wich framework to use, how to make it keep the sl app design and not go to far off the original design. 
+So I decided to keep working with React, to keep learning and become better at the samtime as this project was going forward. 
+I had some issues during my process to keep the design and to make it look the same as the actual app. 
+I decide to keep the app fram instead of also building a website desing, because there is non in sl app. 
+I then made all changes after the info we gathered as group but also the feedback I gathered when doing my own testing, some people tried out my webpage in progress, after that I started to work on making it look more like tha actual app. 
 Then I got some feedback on the buttons and icons so I tried to change them a bit.
 The icons we found on SL´s figma page, also the sizes to styling and fonts.
+
+Is stumbled on some issues with the responsivness and it could be better, i think I would use mixins in coming projects to make it easier with resposivness instead of a bunch of media queries. 
+
+I learned a lot during my period with this project and what to use in the future when sorking with react. 
 
 </br>
 
