@@ -30,9 +30,39 @@ https://www.figma.com/proto/rPnOvgfPEs23B0CQ9S0yLM/Prototype-Main-Group-2-H%C3%A
 
 # The work
 
-My own work I started with the feedback, change all the info we gathered as group but also the feedback I gathered when doing my own testing, some people tried out my webpage in progress, after that I started to work on making it look more like tha actual app. 
+As a group we did all the pre-work and everything from trying to make the desing and functions similar to the SL app, but we cut down a lot of our pre work to be able to make and MVP, also we stumbled upon problems when we had bot the apple and android version of the app wich both was a bit different in design. 
+We also had to make it a bit more simple due to the reason that everyone in our group could then code the app, because the implementaion was to be done solo. 
+
+We cut of a lot of the more complicated design parts and made them more easy, but not everything was looking like the acutal app. We got feedback on this.
+
+#  My own pre-work 
+
+I started with the feedback, change all the info we gathered as group but also the feedback I gathered when doing my own testing, some people tried out my webpage in progress, after that I started to work on making it look more like tha actual app. 
 Then I got some feedback on the buttons and icons so I tried to change them a bit.
 The icons we found on SL´s figma page, also the sizes to styling and fonts.
+
+</br>
+
+---
+
+# For KYH 
+# The process, my choices, issues i stumbled upon and reflection
+
+When I started with the project my first goal was to decide if I wanted to do this project in pure vanilla js, html, css or React, I decided to continue working in react to learn more and because I started to feel more comfortable using states and the libraries. 
+
+Because this project was supposed to be an extent to SL app I wanted to  make i look like the app, so I also did research by looking at their figma and also the webpage of SL, androind and apple apps, all designs was a bit different wich made it hard to choose wich one to follow, so I kind of merged my vision in to one. 
+
+I then choose to use CSS for styling wich brought its own complications due to it overriding code, if I would have chosen SASS or Styled components I could have made it a bit easier. Wich I will do in the future of my projects. 
+
+I also stumbled upon problems when I tried to do the counters for the tickets, I think I have to learn reducer and context for this part to make it easier, I did a pre ticket function but I diden implement the fully working function on this one. 
+
+My goal was to resemle their app wich I think was hard due to the reason it was different.
+It would have been easier if I would have had the figma design for the actual app and not future layouts or icons only. 
+But following our ideas from our group work I think I succeeded with some of the design we and reading all the feedback and desing we had planned before cutting stuff out. It was a bit hard to get all the values on their design for me from my phone watching their app, there might be a tool for this but I havent used one yet. 
+
+I hade some trouble with the responsivness on safari, and I think If I would have used mixins in sass instead of mediaqueries with css I might have got this to work better, or used a responsivness library. 
+
+Overall I tried my best to make this implementation and I learned a lot during the process, everything from trying to make my own buttons look like the apps, to using mapbox wich was a struggle to get it to work when pushing it up surge. 
 
 </br>
 

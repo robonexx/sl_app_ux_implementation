@@ -4,11 +4,13 @@ import './payment.css';
 import Swish from '../../assets/icons/Swish_Symbol_P3.png';
 
 const PaymentPage = () => {
+
+  
   let newTicket = {
     id: 10,
     type: 'vuxen',
     price: 38,
-    total: 76,
+    total: 38,
     date: '2021-09-21T14:28:06.419Z',
     active: true,
   };
