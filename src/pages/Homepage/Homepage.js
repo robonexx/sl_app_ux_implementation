@@ -9,11 +9,10 @@ const Info = () => (
     <h3>Welcome!</h3>
     <p>
       This is an implemention of a UX design and prototype that started as a
-      group assignment at KYH frontend developer education, the first part was
-      done by
-      <span> (grupp 2 hållbart resande) </span> the prototype was done in figma
-      and later this project continued to become a <span> solo projekt </span>
-      with the goal to implement the design with the changes that was given
+      group assignment at KYH frontend developer education, UX was made by
+      <span> (Fadil, Vanessa, Julius & me) </span> prototype was done in figma.
+      This part is the <span> solo projekt </span>
+      with the goal to implement the design adding the changes that was given
       during the prototype testing.
     </p>
     <a
