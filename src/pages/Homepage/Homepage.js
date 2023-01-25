@@ -9,11 +9,9 @@ const Info = () => (
     <h3>Welcome!</h3>
     <p>
       This is an implemention of a UX design and prototype that started as a
-      group assignment at KYH frontend developer education, UX was made by
-      <span> (Fadil, Vanessa, Julius & me) </span> prototype was done in figma.
-      This part is the <span> solo projekt </span>
-      with the goal to implement the design adding the changes that was given
-      during the prototype testing.
+      side project, UX & prototype was done in figma.
+      The goal was to implement the design adding the changes that was given
+      during the prototype testing that I made.
     </p>
     <a
       /* Added styling here for this could have put in the css file but just wanted to show that i know how to do inline styles */
